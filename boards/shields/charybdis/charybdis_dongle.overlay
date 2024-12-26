@@ -21,10 +21,11 @@
 &trackball_listener2 {
     status = "okay";
 };
+
 &pro_micro_i2c {
     status = "okay";
     
-    &st7789 {
+    st7789: st7789v@0 {
         compatible = "sinowealth,sh1106";
         reg = <0x3c>;
         width = <128>;

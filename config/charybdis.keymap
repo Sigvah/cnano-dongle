@@ -484,7 +484,7 @@
         squares: squares {
             compatible = "zmk,behavior-mod-morph";
             bindings = <&kp WNB_LBKT>, <&kp WNB_RBKT>;
-
+ 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
