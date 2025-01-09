@@ -23,7 +23,7 @@
     };
     trackball_split2: trackball_split2@0 {
       compatible = "zmk,input-split";
-      reg = <0>;
+      reg = <1>;
     };
   };
 
@@ -34,7 +34,7 @@
 
     scroll {
       layers = <SCRL>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_scaler 1 7>, <&zip_xy_to_scroll_mapper>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
     };
 
   };
@@ -45,7 +45,7 @@
 
     scroll {
       layers = <SCRL>;
-      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)>, <&zip_xy_scaler 1 7>, <&zip_xy_to_scroll_mapper>;
+      input-processors = <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>, <&zip_xy_scaler 1 5>, <&zip_xy_to_scroll_mapper>;
     };
 
   };
