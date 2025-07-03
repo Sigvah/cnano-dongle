@@ -6,9 +6,6 @@ manifest:
       url-base: https://github.com/badjeff
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
-
   projects:
     - name: zmk-feature-split-esb
       remote: badjeff
@@ -32,10 +29,6 @@ manifest:
 
     - name: zmk-pmw3610-driver
       remote: badjeff
-      revision: main
-
-    - name: zmk-dongle-display
-      remote: englmaxi
       revision: main
 
   self:
