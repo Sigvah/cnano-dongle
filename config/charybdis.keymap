@@ -283,7 +283,7 @@
 
         numbers {
             bindings = <
-  &kp LS(F5)    &kp LG(LC(Q))  &kp LS(F7)   &kp LS(F8)   &none     &kp NB_BSLH  &kp N7  &kp N8  &kp N9  &kp NB_STAR
+  &bootloader    &kp LG(LC(Q))  &kp LS(F7)   &kp LS(F8)   &none     &kp NB_BSLH  &kp N7  &kp N8  &kp N9  &kp NB_STAR
   &kp LCTRL  &kp LALT       &kp LGUI    &kp LSHIFT   &tog 4    &kp NB_FSLH  &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
   &sys_reset    &kp LS(F10)    &kp LS(F11)  &kp LS(F12)  &none     &kp NB_PIPE  &kp N1  &kp N2  &kp N3  &kp NB_PLUS
                                             &none        &none     &kp DOT      &kp N0
@@ -295,7 +295,7 @@
 
         num_win {
             bindings = <
-  &kp LS(F5)    &kp LG(L)    &kp RIGHT_ALT  &kp LS(F8)  &none     &kp WNB_BSLH  &kp N7  &kp N8  &kp N9  &kp WNB_STAR
+  &bootloader    &kp LG(L)    &kp RIGHT_ALT  &kp LS(F8)  &none     &kp WNB_BSLH  &kp N7  &kp N8  &kp N9  &kp WNB_STAR
   &kp LCTRL  &kp LALT     &kp LGUI      &kp LSHIFT  &tog 4    &kp WNB_FSLH  &kp N4  &kp N5  &kp N6  &kp WNB_EQUAL
   &sys_reset    &kp LS(F10)  &kp LS(F11)    &kp RALT    &none     &kp WNB_PIPE  &kp N1  &kp N2  &kp N3  &kp WNB_PLUS
                                             &none       &none     &kp DOT       &kp N0

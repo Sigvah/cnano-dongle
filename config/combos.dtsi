@@ -262,7 +262,7 @@
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
             bindings = <&bootloader>;
-            key-positions = <29 19>;
+            key-positions = <15 16 >;
         };
 
         btn_1_l {
@@ -288,7 +288,7 @@
 
         bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <10 20>;
+            key-positions = <13 14>;
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
         };
