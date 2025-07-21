@@ -10,7 +10,7 @@ manifest:
     - name: zmk-feature-split-esb
       remote: badjeff
       revision: main
-     - name: englmaxi
+    - name: englmaxi
       url-base: https://github.com/englmaxi
 
     - name: sdk-nrf
