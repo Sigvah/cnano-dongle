@@ -6,12 +6,12 @@ manifest:
       url-base: https://github.com/badjeff
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk-feature-split-esb
       remote: badjeff
       revision: main
-    - name: englmaxi
-      url-base: https://github.com/englmaxi
 
     - name: sdk-nrf
       remote: nrfconnect
