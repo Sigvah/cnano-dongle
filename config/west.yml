@@ -15,7 +15,7 @@ manifest:
 
     - name: sdk-nrf
       remote: nrfconnect
-      revision: revision: v2.6.4 # zephyr v3.5.99
+      revision: v2.6.4 # zephyr v3.5.99
       path: nrf
 
     - name: nrfxlib
