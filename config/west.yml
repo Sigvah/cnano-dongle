@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: nrfconnect
-      url-base: https://github.com/nrfconnect
     - name: sigvah
       url-base: https://github.com/sigvah
   projects:
