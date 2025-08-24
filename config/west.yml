@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
-    - name: sigvah
-      url-base: https://github.com/sigvah
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk-feature-split-esb
       remote: badjeff
