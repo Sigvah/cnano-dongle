@@ -21,10 +21,6 @@
 		, <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
 };
-&zmk_split {
-    zmk,role = "peripheral";
-    zmk,peripheral-id = <0>;
-};
 &spi0 {
     status = "okay";
 };
@@ -43,5 +39,13 @@
         base-addr-0 = <0xE7 0xE7 0xE7 0xE7>;
         base-addr-1 = <0xC2 0xC2 0xC2 0xC2>;
         addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    };
+};
+
+/ {
+    zmk_split: zmk_split {
+        compatible = "zmk,split";
+        zmk,role = "peripheral";
+        zmk,peripheral-id = <0>;
     };
 };
