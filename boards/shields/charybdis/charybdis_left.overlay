@@ -21,6 +21,10 @@
 		, <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
 };
+&zmk_split {
+    zmk,role = "peripheral";
+    zmk,peripheral-id = <0>;
+};
 &spi0 {
     status = "okay";
 };
