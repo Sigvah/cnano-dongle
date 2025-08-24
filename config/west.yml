@@ -34,8 +34,8 @@ manifest:
       revision: main
 
     - name: zmk-dongle-display
-      remote: sigvah
-      revision: optional-ble-peripheral
+      remote: englmaxi
+      revision: main
 
   self:
     path: config
