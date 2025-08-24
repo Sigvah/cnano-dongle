@@ -31,7 +31,7 @@
 };
 &zmk_split {
     zmk,role = "peripheral";
-    zmk,peripheral-id = <0>;
+    zmk,peripheral-id = <1>;
 };
 &spi0 {
     status = "okay";
