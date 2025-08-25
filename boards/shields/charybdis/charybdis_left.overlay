@@ -41,11 +41,3 @@
         addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
     };
 };
-
-/ {
-    zmk_split: zmk_split {
-        compatible = "zmk,split";
-        zmk,role = "peripheral";
-        zmk,peripheral-id = <0>;
-    };
-};
