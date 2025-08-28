@@ -12,6 +12,10 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: caksoylar
       url-base: https://github.com/caksoylar
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
   projects:
     - name: zmk-feature-split-esb
       remote: badjeff
@@ -47,6 +51,14 @@ manifest:
     - name: zmk-rgbled-widget # <---
       remote: caksoylar # <---
       revision: main # <---
+
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-fingerpunch-keyboards
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
 
   self:
     path: config
