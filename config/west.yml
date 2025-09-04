@@ -16,6 +16,8 @@ manifest:
       url-base: https://github.com/sadekbaroudi
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk-feature-split-esb
       remote: badjeff
@@ -42,8 +44,8 @@ manifest:
       revision: main
 
     - name: zmk-dongle-display
-      remote: sigvah
-      revision: optional-ble-peripheral
+      remote: englmaxi
+      revision: main
 
     - name: forager-zmk-module # <---
       remote: carrefinho # <---
