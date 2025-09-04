@@ -258,13 +258,6 @@
             key-positions = <33 32>;
         };
 
-        boot_loader {
-            timeout-ms = <35>;
-            require-prior-idle-ms = <150>;
-            bindings = <&bootloader>;
-            key-positions = <15 16 >;
-        };
-
         btn_1_l {
             bindings = <&mkp MB1>;
             key-positions = <13 23>;
@@ -288,19 +281,26 @@
 
         bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <13 14>;
+            key-positions = <0 3>;
             timeout-ms = <35>;
             require-prior-idle-ms = <150>;
         };
 
+        boot_loader {
+            timeout-ms = <35>;
+            require-prior-idle-ms = <150>;
+            bindings = <&bootloader>;
+            key-positions = <5 8 >;
+        };
+
         reset_left {
             bindings = <&sys_reset>;
-            key-positions = <0 10>;
+            key-positions = <0 4>;
         };
 
         right_reset {
             bindings = <&sys_reset>;
-            key-positions = <9 19>;
+            key-positions = <5 9>;
         };
     };
 };
