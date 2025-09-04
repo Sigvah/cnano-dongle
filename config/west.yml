@@ -6,6 +6,16 @@ manifest:
       url-base: https://github.com/badjeff
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
+    - name: sigvah
+      url-base: https://github.com/sigvah
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    - name: sadekbaroudi
+      url-base: https://github.com/sadekbaroudi
+    - name: dhruvinsh
+      url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
@@ -36,6 +46,21 @@ manifest:
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
+
+    - name: forager-zmk-module # <---
+      remote: carrefinho # <---
+      revision: main # <---
+    - name: zmk-rgbled-widget # <---
+      remote: caksoylar # <---
+      revision: main # <---
+
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-fingerpunch-keyboards
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
 
   self:
     path: config
