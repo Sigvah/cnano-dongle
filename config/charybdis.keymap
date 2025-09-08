@@ -305,7 +305,7 @@
 
         nav {
             bindings = <
-  &none     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &none  &none            &kp C_SLEEP  &kp C_POWER  &bootloader
+  &none     &none         &kp C_BRI_DEC &kp C_BRI_UP  &none      &none  &none            &kp C_SLEEP  &kp C_POWER  &bootloader
   &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 4     &none  &kp RIGHT_SHIFT  &kp RGUI     &kp LALT     &kp RCTRL
   &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &none      &none  &kp HOME         &none        &kp END      &sys_reset
                                         &kp ESC       &kp TAB    &none  &none
@@ -317,7 +317,7 @@
 
         fn {
             bindings = <
-  &kp F5     &kp F6    &kp F7    &kp F8      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
+  &bt BT_CLR &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
   &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
   &kp F9     &kp F10   &kp F11   &kp F12     &none      &none  &kp F1  &kp F2  &kp F3  &kp F10
                                  &none       &none      &none  &none
