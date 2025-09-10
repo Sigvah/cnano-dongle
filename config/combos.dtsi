@@ -302,15 +302,15 @@
             bindings = <&sys_reset>;
             key-positions = <5 8>;
         };
-        r_sshift {
+        l_sshift {
             timeout-ms = <15>;
             bindings = <&sk LSHIFT>;
             key-positions =<11 12>;
         };
-        l_sshift {
+        r_sshift {
             timeout-ms = <15>;
             bindings = <&sk LSHIFT>;
-            key-positions =<7 8>;
+            key-positions =<17 18>;
         };
     };
 };
