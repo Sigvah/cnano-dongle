@@ -305,11 +305,11 @@
         r_sshift {
             bindings = <&sk LSHIFT>
             key-positions =<11 12>
-        }
+        };
         l_sshift {
             timeout-ms = <15>;
             bindings = <&sk LSHIFT>
             key-positions =<7 8>
-        }
+        };
     };
 };
