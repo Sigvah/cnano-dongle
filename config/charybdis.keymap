@@ -6,17 +6,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "combos.dtsi"
 
-#define WIN 1
-#define SYMBOLS 2
-#define NUMBERS 3
-#define NAV 4
-#define FUNCTION 5
-#define BLUETOOTH 6
-#define MOUSE 7
-#define CLICK 8
-#define SCRL 9
-#define BIRO 10
-
 &caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
 
 // Change sticky key defaults
@@ -263,8 +252,7 @@
                                           &lt_spcesc 2 0      &blt 5 TAB    &lt 6 ENTER  &lt_bspc 4 0
             >;
 
-            display-name = "MAC";
-            label = "MAC";
+            display-name = "Macintosh";
         };
 
         win {
@@ -275,8 +263,7 @@
                                           &lt_spcesc 3 0  &blt 5 TAB    &lt 6 ENTER  &lt_bspc 4 0
             >;
 
-            display-name = "WIN";
-            label = "WIN";
+            display-name = "Windows";
         };
 
         numbers {
@@ -287,8 +274,7 @@
                                            &none        &none     &kp DOT      &kp N0
             >;
 
-            display-name = "NUM";
-            label = "NUM";
+            display-name = "Numbers";
         };
 
         num_win {
@@ -299,8 +285,7 @@
                                            &none       &none     &kp DOT       &kp N0
             >;
 
-            display-name = "NUM";
-            label = "NUW";
+            display-name = "Numbers";
         };
 
         nav {
@@ -311,8 +296,7 @@
                                         &kp ESC       &kp TAB    &none  &none
             >;
 
-            display-name = "NAV";
-            label = "NAV";
+            display-name = "Navigation";
         };
 
         fn {
@@ -323,8 +307,7 @@
                                  &none       &none      &none  &none
             >;
 
-            display-name = "FUNC";
-            label = "FUN";
+            display-name = "Functions";
         };
 
         controls {
@@ -335,8 +318,7 @@
                                              &kp C_PAUSE      &trans        &trans  &trans
             >;
 
-            display-name = "MEDIA";
-            label = "MED";
+            display-name = "Media";
         };
 
         mouse {
@@ -347,20 +329,7 @@
                                      &mkp LCLK       &mkp RCLK    &mkp RCLK  &mkp LCLK
             >;
 
-            display-name = "MOUSE";
-            label = "MOUS";
-        };
-
-        FULL_SCROLL {
-            bindings = <
-  &trans     &trans    &trans    &trans      &trans       &trans     &trans           &trans    &trans    &trans
-  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &trans       &trans     &kp RIGHT_SHIFT  &kp RGUI  &kp LALT  &kp RCTRL
-  &kp LCTRL  &trans    &kp LALT  &kp LCMD    &trans       &trans     &trans           &trans    &trans    &trans
-                                 &mkp LCLK   &mkp RCLK    &mkp RCLK  &mkp LCLK
-            >;
-
-            display-name = "FSCRL";
-            label = "SCR";
+            display-name = "Mouse";
         };
 
         scrolly_moly {
@@ -371,7 +340,7 @@
                           &trans  &trans    &trans  &trans
             >;
 
-            display-name = "SCRL";
+            display-name = "Scrolling";
             label = "DRG";
         };
     };
