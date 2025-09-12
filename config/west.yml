@@ -62,5 +62,9 @@ manifest:
       revision: main
       import: config/deps.yml
 
+    - name: prospector-zmk-module # <--- and these
+      remote: carrefinho # <---
+      revision: main # <---
+
   self:
     path: config
