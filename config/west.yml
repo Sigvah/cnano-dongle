@@ -19,21 +19,6 @@ manifest:
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
-    - name: zmk-feature-split-esb
-      remote: badjeff
-      revision: main
-
-    - name: sdk-nrf
-      remote: nrfconnect
-      revision: v2.6.4 # zephyr v3.5.99
-      path: nrf
-
-    - name: nrfxlib
-      remote: nrfconnect
-      revision: v2.6.4
-      repo-path: sdk-nrfxlib
-      path: nrfxlib
-
     - name: zmk
       remote: zmkfirmware
       revision: main
