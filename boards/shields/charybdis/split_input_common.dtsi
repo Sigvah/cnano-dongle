@@ -8,8 +8,7 @@
 #define FUNCTION 5
 #define BLUETOOTH 6
 #define MOUSE 7
-#define CLICK 8
-#define SCRL 9
+#define SCRL 8
 
 / {
   split_inputs {
