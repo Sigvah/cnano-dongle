@@ -252,7 +252,7 @@
                                           &lt_spcesc 2 0      &blt 5 TAB    &lt 6 ENTER  &lt_bspc 4 0
             >;
 
-            display-name = "Macintosh";
+            display-name = "Mac";
         };
 
         win {
@@ -296,7 +296,7 @@
                                         &kp ESC       &kp TAB    &none  &none
             >;
 
-            display-name = "Navigation";
+            display-name = "Nav";
         };
 
         fn {
@@ -307,7 +307,7 @@
                                  &none       &none      &none  &none
             >;
 
-            display-name = "Functions";
+            display-name = "Funcs";
         };
 
         controls {
@@ -338,7 +338,7 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                           &trans  &trans    &trans  &trans
             >;
-            display-name = "Scrolling";
+            display-name = "Scroll";
         };
     };
 };

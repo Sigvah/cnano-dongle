@@ -241,7 +241,7 @@
         scrl_r {
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;
-            bindings = <&mo 9>;
+            bindings = <&mo 7>;
             key-positions = <18 28>;
         };
 
@@ -273,7 +273,7 @@
         };
 
         scrl_l {
-            bindings = <&mo 9>;
+            bindings = <&mo 7>;
             key-positions = <11 21>;
             timeout-ms = <25>;
             require-prior-idle-ms = <250>;

@@ -2,11 +2,11 @@
 #include <input/processors.dtsi>
 
 #define WIN 1
-#define SYMBOLS 2
-#define NUMBERS 3
+#define NUMBERS 2
+#define NUMBERSWIN 3
 #define NAV 4
 #define FUNCTION 5
-#define BLUETOOTH 6
+#define MEDIA 6
 #define MOUSE 7
 #define SCRL 8
 
