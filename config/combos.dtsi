@@ -28,21 +28,18 @@
 
         combo_paras {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&paras>;
             key-positions = <27 28>;
         };
 
         combo_squares {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&squares>;
             key-positions = <7 8>;
         };
 
         combo-curles {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&curles>;
             key-positions = <2 1>;
             layers = <0>;
@@ -50,7 +47,6 @@
 
         combo-curles_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&curles_win>;
             key-positions = <2 1>;
             layers = <1>;
@@ -58,7 +54,6 @@
 
         combo_crocs {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_LT>;
             key-positions = <22 21>;
             layers = <0>;
@@ -66,7 +61,6 @@
 
         combo_crocs_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_LT>;
             key-positions = <22 21>;
             layers = <1>;
@@ -74,7 +68,6 @@
 
         combo_at {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_AT>;
             key-positions = <2 7>;
             layers = <0>;
@@ -82,7 +75,6 @@
 
         win_at {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_AT_SIGN>;
             key-positions = <2 7>;
             layers = <1>;
@@ -90,21 +82,18 @@
 
         caps_word_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&caps_word>;
             key-positions = <11 18>;
         };
 
         amp_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_AMPS>;
             key-positions = <13 16>;
         };
 
         grave_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_GRAVE>;
             key-positions = <1 8>;
             layers = <0>;
@@ -112,7 +101,6 @@
 
         grave_combo_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_GRAVE>;
             key-positions = <1 8>;
             layers = <1>;
@@ -120,7 +108,6 @@
 
         dollar_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_DLLR>;
             key-positions = <12 17>;
             layers = <0>;
@@ -128,21 +115,18 @@
 
         percent_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_PRCNT>;
             key-positions = <3 13>;
         };
 
         hash_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_HASH>;
             key-positions = <23 26>;
         };
 
         pipe_mac {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_PIPE>;
             key-positions = <7 17>;
             layers = <0>;
@@ -150,7 +134,6 @@
 
         pipe_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_PIPE>;
             key-positions = <7 17>;
             layers = <1>;
@@ -158,7 +141,6 @@
 
         bslh_mac {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_BSLH>;
             key-positions = <8 18>;
             layers = <0>;
@@ -166,7 +148,6 @@
 
         bslh_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_BSLH>;
             key-positions = <8 18>;
             layers = <1>;
@@ -174,14 +155,12 @@
 
         fslh_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_FSLH>;
             key-positions = <2 12>;
         };
 
         dollar_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_DLLR>;
             key-positions = <12 17>;
             layers = <1>;
@@ -189,7 +168,6 @@
 
         pnd_mac {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp NB_POUND_SIGN>;
             key-positions = <3 6>;
             layers = <0>;
@@ -197,7 +175,6 @@
 
         pnd_win {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_POUND_SIGN>;
             key-positions = <3 6>;
             layers = <1>;
@@ -205,49 +182,42 @@
 
         tilde_combo {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_TILDE>;
             key-positions = <1 11>;
         };
 
         caret_mac {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp WNB_CARET>;
             key-positions = <6 16>;
         };
 
         win_def {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&tog 1>;
             key-positions = <30 33>;
         };
 
         btn1_r {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&mkp MB1>;
             key-positions = <16 26>;
         };
 
         mb2_r {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&mkp MB2>;
             key-positions = <17 27>;
         };
 
         scrl_r {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&mo 8>;
             key-positions = <18 28>;
         };
 
         thumb_esc {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&kp ESCAPE>;
             key-positions = <30 31>;
         };
@@ -262,33 +232,28 @@
             bindings = <&mkp MB1>;
             key-positions = <13 23>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
         };
 
         btn2_l {
             bindings = <&mkp MB2>;
             key-positions = <12 22>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
         };
 
         scrl_l {
             bindings = <&mo 8>;
             key-positions = <11 21>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
         };
 
         bootloader_left {
             bindings = <&bootloader>;
             key-positions = <0 4>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
         };
 
         boot_loader {
             timeout-ms = <25>;
-            require-prior-idle-ms = <250>;
             bindings = <&bootloader>;
             key-positions = <5 9 >;
         };
