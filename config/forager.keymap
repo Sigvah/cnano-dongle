@@ -11,8 +11,8 @@
 // Change sticky key defaults
 
 &sk {
-    release-after-ms = <2000>;
     quick-release;
+    lazy;
 };
 
 &lt { quick-tap-ms = <175>; };

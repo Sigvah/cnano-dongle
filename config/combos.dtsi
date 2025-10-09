@@ -270,14 +270,12 @@
         l_sshift {
             require-prior-idle-ms = <0>;
             timeout-ms = <25>;
-            lazy;
             bindings = <&sk LSHIFT>;
             key-positions =<11 12>;
         };
         r_sshift {
             require-prior-idle-ms = <0>;
             timeout-ms = <25>;
-            lazy;
             bindings = <&sk RSHIFT>;
             key-positions =<17 18>;
         };
