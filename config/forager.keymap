@@ -45,14 +45,6 @@
             hold-trigger-on-release;
         };
 
-        lsscw: layer_sticky_shift_caps_word {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&sscw>;
-        };
-
         tt: toggle_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -68,12 +60,6 @@
             quick-tap-ms = <0>;
             flavor = "balanced";
             bindings = <&mo>, <&kp>;
-        };
-
-        repeat_encoder: repeat_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&kp BSPC>, <&key_repeat>;
         };
 
         tkp_fast: behavior_trackball_key_press {
