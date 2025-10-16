@@ -33,9 +33,12 @@ include:
     shield: forager_right rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: charybdis_dongle prospector_adapter
+  - board: seeeduino_xiao_ble
+    shield: visorbearer
+    snippet: studio-rpc-usb-uart
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
   #  - board: seeeduino_xiao_ble
   #    shield: bykeeb_left
   #  - board: seeeduino_xiao_ble
   #      shield: bykeeb_right
-  #  - board: seeeduino_xiao_ble
-  #      shield: settings_reset

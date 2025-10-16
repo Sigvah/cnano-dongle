@@ -50,6 +50,10 @@ manifest:
     - name: prospector-zmk-module # <--- and these
       remote: carrefinho # <---
       revision: main # <---
+    - name: zmk-keyboards-visorbearer # <---
+      repo-path: visorbearer-zmk-module # <---
+      remote: carrefinho # <---
+      revision: main # <---
 
   self:
     path: config
