@@ -69,23 +69,6 @@
             key-positions = <5 15>;
         };
 
-        combo_curly_braces_right {
-            timeout-ms = <25>;
-            bindings = <&kp RBRC>;  // }
-            key-positions = <8 18>;
-        };
-
-        combo_square_brackets_right {
-            timeout-ms = <25>;
-            bindings = <&kp RBKT>;  // ]
-            key-positions = <7 17>;
-        };
-
-        combo_parentheses_right {
-            timeout-ms = <25>;
-            bindings = <&kp RPAR>;  // )
-            key-positions = <6 16>;
-        };
         combo_v {
             timeout-ms = <25>;
             bindings = <&kp V>;
