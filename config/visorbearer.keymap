@@ -246,27 +246,25 @@
             display-name = "WIN";
         };
 
-        numbers {
-            bindings = <
-  &bootloader  &kp LG(LC(Q))  &kp LS(F7)   &kp LS(F8)   &none     &kp NB_BSLH  &kp N7  &kp N8  &kp N9  &kp NB_STAR
-  &kp LCTRL    &kp LALT       &kp LGUI     &kp LSHIFT   &tog 4    &kp NB_FSLH  &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
-  &sys_reset   &kp LS(F10)    &kp LG(C)  &kp LG(V)    &kp N1  &kp N2  &kp N3  &kp NB_PLUS
-                                           &none        &none     &kp DOT      &kp N0
-            >;
+numbers {
+    bindings = <
+&kp NB_GRAVE  &kp NB_PIPE   &kp NB_TILDE  &kp NB_CARET  &kp NB_POUND_SIGN    &kp NB_STAR   &kp N7  &kp N8  &kp N9  &bootloader
+&kp NB_PRCNT  &kp NB_DLLR   &kp NB_FSLH   &kp NB_AMPS   &tog 4               &kp NB_PLUS   &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
+&sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                          &kp N0        &kp N1  &kp N2  &kp N3
+                            &none         &none                              &kp DOT       &kp N0
+    >;
+    display-name = "NUM";
+};
 
-            display-name = "NUM";
-        };
-
-        num_win {
-            bindings = <
-  &bootloader  &kp LG(L)    &kp RIGHT_ALT  &kp LS(F8)  &none     &kp WNB_BSLH  &kp N7  &kp N8  &kp N9  &kp WNB_STAR
-  &kp LCTRL    &kp LALT     &kp LGUI       &kp LSHIFT  &tog 4    &kp WNB_FSLH  &kp N4  &kp N5  &kp N6  &kp WNB_EQUAL
-  &sys_reset   &kp LS(F10)  &kp LS(C)    &kp LC(V)      &kp N1  &kp N2  &kp N3  &kp WNB_PLUS
-                                           &none       &none     &kp DOT       &kp N0
-            >;
-
-            display-name = "NUM";
-        };
+numbers_win {
+    bindings = <
+&kp WNB_GRAVE  &kp WNB_PIPE   &kp WNB_TILDE  &kp WNB_CARET  &kp WNB_POUND_SIGN    &kp WNB_STAR   &kp N7  &kp N8  &kp N9  &bootloader
+&kp WNB_PRCNT  &kp WNB_DLLR   &kp WNB_FSLH   &kp WNB_AMPS   &tog 4                &kp WNB_PLUS   &kp N4  &kp N5  &kp N6  &kp WNB_EQUAL
+&sys_reset     &kp WNB_BSLH   &kp LC(C)      &kp LC(V)                            &kp N0         &kp N1  &kp N2  &kp N3
+                              &none          &none                                &kp DOT        &kp N0
+    >;
+    display-name = "NUM_WIN";
+};
 
         nav {
             bindings = <
