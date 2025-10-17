@@ -147,19 +147,19 @@
         btn1_r {
             timeout-ms = <25>;
             bindings = <&mkp MB1>;
-            key-positions = <15 24>;
+            key-positions = <16 24>;
         };
 
         mb2_r {
             timeout-ms = <25>;
             bindings = <&mkp MB2>;
-            key-positions = <16 25>;
+            key-positions = <17 25>;
         };
 
         scrl_r {
             timeout-ms = <25>;
             bindings = <&mo 8>;
-            key-positions = <17 26>;
+            key-positions = <18 26>;
         };
 
         btn_1_l {
