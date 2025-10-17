@@ -35,37 +35,37 @@
         // Square brackets - same on both
         combo_square_brackets {
             timeout-ms = <25>;
-            bindings = <&kp LBKT>;  // [
+            bindings = <&kp NB_LBKT>;  // [
             key-positions = <2 12>;
         };
 
         combo_square_brackets_right {
             timeout-ms = <25>;
-            bindings = <&kp RBKT>;  // ]
+            bindings = <&kp NB_RBKT>;  // ]
             key-positions = <7 17>;
         };
 
         // Parentheses - same on both
         combo_parentheses {
             timeout-ms = <25>;
-            bindings = <&kp LPAR>;  // (
+            bindings = <&kp NB_LPAR>;  // (
             key-positions = <3 13>;
         };
 
         combo_parentheses_right {
             timeout-ms = <25>;
-            bindings = <&kp RPAR>;  // )
+            bindings = <&kp NB_RPAR>;  // )
             key-positions = <6 16>;
         };
         combo_less_than {
             timeout-ms = <25>;
-            bindings = <&kp LT>;  // 
+            bindings = <&kp NB_LT>;  // 
             key-positions = <4 14>;
         };
 
         combo_greater_than {
             timeout-ms = <25>;
-            bindings = <&kp GT>;  // >
+            bindings = <&kp NB_GT>;  // >
             key-positions = <5 15>;
         };
 
@@ -82,25 +82,25 @@
         };
 
         combo_o_slash {
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             bindings = <&kp SEMI>;  // ø
             key-positions = <1 2>;
         };
 
         combo_a_ring {
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             bindings = <&kp LBKT>;  // å
             key-positions = <25 26>;
         };
         combo_ques {
-            timeout-ms = <25>;
-            key-positions = <7 6>;
+            timeout-ms = <40>;
+            key-positions = <7 6>;  // @
             bindings = <&ques_excl>;
         };
 
         ae {
-            timeout-ms = <25>;
-            bindings = <&kp APOS>;
+            timeout-ms = <40>;
+            bindings = <&kp APOS>; // æ
             key-positions = <3 2>;
         };
 
