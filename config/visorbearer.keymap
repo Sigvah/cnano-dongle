@@ -12,7 +12,6 @@
 
 &sk {
     quick-release;
-    lazy;
 };
 
 &lt { quick-tap-ms = <175>; };
