@@ -57,21 +57,21 @@
             bindings = <&kp NB_RPAR>;  // )
             key-positions = <6 16>;
         };
-        combo_less_than {
+        combo_v {
             timeout-ms = <25>;
-            bindings = <&kp NB_LT>;  // 
+            bindings = <&kp G>;  // 
             key-positions = <4 14>;
         };
 
         combo_greater_than {
             timeout-ms = <25>;
-            bindings = <&kp NB_GT>;  // >
+            bindings = <&kp M>;  // >
             key-positions = <5 15>;
         };
 
-        combo_v {
+        combo_less_than {
             timeout-ms = <25>;
-            bindings = <&kp V>;
+            bindings = <&kp NB_LT>;
             key-positions = <21 22>;
         };
 
