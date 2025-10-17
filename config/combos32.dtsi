@@ -57,14 +57,14 @@
             bindings = <&kp NB_RPAR>;  // )
             key-positions = <6 16>;
         };
-        combo_v {
-            timeout-ms = <25>;
+        combo_g {
+            timeout-ms = <50>;
             bindings = <&kp G>;  // 
             key-positions = <4 14>;
         };
 
-        combo_greater_than {
-            timeout-ms = <25>;
+        combo_m {
+            timeout-ms = <50>;
             bindings = <&kp M>;  // >
             key-positions = <5 15>;
         };
