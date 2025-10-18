@@ -121,7 +121,7 @@
         hash_combo {
             timeout-ms = <25>;
             bindings = <&kp NB_HASH>;
-            key-positions = <23 26>;
+            key-positions = <23 24>;
         };
 
         grave_combo {
