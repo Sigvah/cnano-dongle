@@ -242,27 +242,5 @@
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;  // HYPER
             key-positions = <30 31>;
         };
-
-        bootloader_left {
-            bindings = <&bootloader>;
-            key-positions = <0 4>;
-            timeout-ms = <25>;
-        };
-
-        boot_loader {
-            timeout-ms = <25>;
-            bindings = <&bootloader>;
-            key-positions = <5 9>;
-        };
-
-        reset_left {
-            bindings = <&sys_reset>;
-            key-positions = <0 3>;
-        };
-
-        right_reset {
-            bindings = <&sys_reset>;
-            key-positions = <5 8>;
-        };
     };
 };
