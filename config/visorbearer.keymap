@@ -243,7 +243,7 @@ numbers_win {
 
         nav {
             bindings = <
-    &none        &none          &kp C_BRI_DEC &kp C_BRI_UP  &none      &none  &none            &kp C_SLEEP  &kp C_POWER  &bootloader
+    &ind_con        &ind_bat           &kp C_BRI_DEC &kp C_BRI_UP  &none      &none  &none            &kp C_SLEEP  &kp C_POWER  &bootloader
   &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 4     &none  &kp RIGHT_SHIFT  &kp RGUI     &kp LALT     &kp RCTRL
   &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &kp HOME         &none        &kp END      &sys_reset
                                         &kp ESC       &kp TAB    &none  &none
