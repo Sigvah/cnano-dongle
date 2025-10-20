@@ -246,5 +246,6 @@
             timeout-ms = <25>;
             bindings = <&soft_off>;
             key-positions = <4 5 14 15>;
+        };
     };
 };
