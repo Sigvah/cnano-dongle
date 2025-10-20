@@ -51,7 +51,7 @@ manifest:
       remote: carrefinho # <---
       revision: main # <---
     - name: zmk-keyboards-visorbearer # <---
-      repo-path: visorbearer-zmk-module # <---
+      repo-path: visorbearer-zmk-module/tree/feature/configurable-modifier
       remote: carrefinho # <---
       revision: main # <---
 
