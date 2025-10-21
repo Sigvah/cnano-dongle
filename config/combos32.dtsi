@@ -75,16 +75,10 @@
             key-positions = <21 22>;
         };
 
-        combo_j {
-            timeout-ms = <25>;
-            bindings = <&kp J>;
-            key-positions = <7 8>;
-        };
-
         combo_o_slash {
             timeout-ms = <40>;
             bindings = <&kp SEMI>;  // ø
-            key-positions = <1 2>;
+            key-positions = <7 8>;
         };
 
         combo_a_ring {
