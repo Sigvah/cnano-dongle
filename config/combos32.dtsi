@@ -69,12 +69,6 @@
             key-positions = <5 15>;
         };
 
-        combo_less_than {
-            timeout-ms = <25>;
-            bindings = <&kp NB_LT>;
-            key-positions = <21 22>;
-        };
-
         combo_o_slash {
             timeout-ms = <40>;
             bindings = <&kp SEMI>;  // ø
@@ -96,6 +90,17 @@
             timeout-ms = <40>;
             bindings = <&kp APOS>; // æ
             key-positions = <3 2>;
+        };
+        combo_v {                          // v
+            timeout-ms = <25>;
+            bindings = <&kp V>;
+            key-positions = <1 2>;
+        };
+
+        combo_j {                          // j
+            timeout-ms = <25>;
+            bindings = <&kp J>;
+            key-positions = <21 22>;
         };
 
         combo_at {

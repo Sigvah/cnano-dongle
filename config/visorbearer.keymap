@@ -224,9 +224,9 @@
 
 numbers {
     bindings = <
-&kp NB_GRAVE  &kp LG(LC(Q))   &kp NB_PIPE  &kp NB_CARET  &kp NB_POUND_SIGN    &kp NB_STAR   &kp N7  &kp N8  &kp N9  &kp NB_TILDE
+&kp NB_TILDE  &kp LG(LC(Q))   &kp NB_PIPE  &kp NB_CARET  &kp NB_POUND_SIGN    &kp NB_STAR   &kp N7  &kp N8  &kp N9  &kp NB_GT
 &hml LCTRL NB_PRCNT  &hml LALT NB_DLLR  &hml LGUI NB_FSLH  &hml LSHFT NB_AMPS  &tog 4  &kp NB_PLUS   &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
-&sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                          &kp N1  &kp N2  &kp N3 &none 
+&sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                          &kp N1  &kp N2  &kp N3 &kp NB_LT 
                             &none         &none                              &kp DOT       &kp N0
     >;
     display-name = "NUM";
@@ -234,7 +234,7 @@ numbers {
 
 numbers_win {
     bindings = <
-&kp WNB_GRAVE  &kp LG(L)   &kp WNB_PIPE  &kp WNB_CARET  &kp WNB_POUND_SIGN    &kp WNB_STAR   &kp N7  &kp N8  &kp N9  &kp WNB_TILDE
+&kp WNB_TILDE  &kp LG(L)   &kp WNB_PIPE  &kp WNB_CARET  &kp WNB_POUND_SIGN    &kp WNB_STAR   &kp N7  &kp N8  &kp N9  &kp NB_LT
 &hml LGUI WNB_PRCNT  &hml LALT WNB_DLLR  &hml LCTRL WNB_FSLH  &hml LSHFT WNB_AMPS  &tog 4                &kp WNB_PLUS   &kp N4  &kp N5  &kp N6  &kp WNB_EQUAL
 &sys_reset     &kp WNB_BSLH   &kp LC(C)      &kp LC(V)                            &kp N0         &kp N1  &kp N2  &kp N3
                               &none          &none                                &kp DOT        &kp N0
