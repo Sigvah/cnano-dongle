@@ -21,7 +21,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: carrefinho:soft-off-pm-fix
+      revision: pull/3102
       import: app/west.yml
 
     - name: zmk-pmw3610-driver
