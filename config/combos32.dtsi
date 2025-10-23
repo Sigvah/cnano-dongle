@@ -243,7 +243,7 @@
         };
         soft_off_combo {
             timeout-ms = <50>;
-            bindings = <&soft_off>;
+            bindings = <&vb_soft_off>;
             key-positions = <4 5 14 15>;
         };
     };
