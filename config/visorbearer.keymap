@@ -1,4 +1,3 @@
-#include <behaviors/led_bars.dtsi>
 #include <behaviors/visorbearer_led.dtsi>
 #include "keys_nb_osx.h"
 #include "keys_nb_win.h"
