@@ -255,7 +255,7 @@ numbers_win {
 
         fn {
             bindings = <
-  &vb_bt_clr &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
+  &vb_bt_clr &vb_bt_sel 0  &vb_bt_sel 1  &vb_bt_sel 2      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
   &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
   &none  &vb_ind_con   &vb_ind_bat    &studio_unlock        &kp F1  &kp F2  &kp F3  &kp F10
                                  &none       &none      &none  &none
