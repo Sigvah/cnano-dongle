@@ -204,19 +204,19 @@
         combo_escape {                     // ESC
             timeout-ms = <25>;
             bindings = <&kp ESCAPE>;
-            key-positions = <28 29>;
+            key-positions = <30 31>;
         };
 
         combo_hyper {                      // Hyper (⌃⌥⌘⇧)
             timeout-ms = <50>;
             bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;
-            key-positions = <30 31>;
+            key-positions = <32 33>;
         };
 
         combo_layer_toggle {               // Toggle Windows layer
             timeout-ms = <25>;
             bindings = <&tog 1>;
-            key-positions = <28 30>;
+            key-positions = <30 33>;
         };
 
         // ============================================
