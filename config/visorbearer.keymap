@@ -8,16 +8,7 @@
 #include "combos32.dtsi"
 #include <behaviors/visorbearer_led.dtsi>
 #include "behaviours.dtsi"
-
-&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
-
-// Change sticky key defaults
-
-&sk {
-    quick-release;
-};
-
-&lt { quick-tap-ms = <175>; };
+#include "common.dtsi"
 
 / {
     // Override behaviors for 32-key layout

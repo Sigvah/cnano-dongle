@@ -1,0 +1,12 @@
+// Common configuration settings shared across all keyboards
+
+// Caps word configuration - allows underscore, minus, backspace, and delete
+&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
+
+// Sticky key defaults
+&sk {
+    quick-release;
+};
+
+// Layer tap configuration
+&lt { quick-tap-ms = <175>; };

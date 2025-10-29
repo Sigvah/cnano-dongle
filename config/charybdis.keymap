@@ -6,17 +6,7 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "combos.dtsi"
 #include "behaviours.dtsi"
-
-&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
-
-// Change sticky key defaults
-
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-};
-
-&lt { quick-tap-ms = <175>; };
+#include "common.dtsi"
 
 / {
     chosen { zmk,matrix_transform = &five_column_transform; };
