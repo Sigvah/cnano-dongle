@@ -6,7 +6,17 @@
 #include <dt-bindings/zmk/pointing.h>
 #include "combos.dtsi"
 #include "behaviours.dtsi"
-#include "common.dtsi"
+
+&caps_word { continue-list = <NB_UNDERSCORE NB_MINUS WNB_UNDERSCORE WNB_MINUS BACKSPACE DEL>; };
+
+// Change sticky key defaults
+
+&sk {
+    quick-release;
+    lazy;
+};
+
+&lt { quick-tap-ms = <175>; };
 
 / {
     keymap {
