@@ -122,7 +122,7 @@
         repeat_encoder: repeat_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp BSPC>, <&key_repeat>;
+            bindings = <&kp BSPC &key_repeat>;
         };
 
         tkp_fast: behavior_trackball_key_press {
