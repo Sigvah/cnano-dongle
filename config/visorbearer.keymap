@@ -201,98 +201,179 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                         DEFAULT LAYER (Mac)                               ║
+        // ║  Colemak-DH base layout with home row mods (32-key layout)                ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         default {
             bindings = <
-  &kp Q         &kp W        &kp F        &kp P               &kp B         &kp J        &kp L                     &kp U        &kp Y        &apos_dqt
-  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &kp V         &kp K        &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
-  &lt 7 Z       &kp X        &kp C        &kp D                      &kp H                     &kp COMMA    &kp DOT      &lt 7 NB_MINUS
-                                          &lt_spcesc 2 0      &blt 5 TAB    &lt 6 ENTER  &lt_bspc 4 0
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &apos_dqt
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &hml LCTRL A  &hml LALT R   &hml LGUI S   &hml LSHFT T  &kp V             &kp K         &hmr RSHFT N  &hmr RGUI E   &hmr LALT I   &hmr RCTRL O
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &lt 7 Z       &kp X         &kp C         &kp D                                         &kp H         &kp COMMA     &kp DOT       &lt 7 NB_MINUS
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &lt_spcesc 2 0 &blt 5 TAB       &lt 6 ENTER   &lt_bspc 4 0
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "MAC";
         };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                       WINDOWS LAYER                                       ║
+        // ║  Same as Mac but uses Windows-specific quote behavior (32-key layout)     ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         win {
             bindings = <
-  &kp Q         &kp W        &kp F        &kp P           &kp B         &kp J        &kp L               &kp U        &kp Y        &apos_dqt_win
-  &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T    &kp G         &kp M        &hmr RIGHT_SHIFT N  &hmr RGUI E  &hmr LALT I  &hmr RCTRL O
-  &lt 7 Z       &kp X        &kp C        &kp D           &kp V         &kp K        &kp H               &kp COMMA    &kp DOT      &lt 7 NB_MINUS
-                                          &lt_spcesc 3 0  &blt 5 TAB    &lt 6 ENTER  &lt_bspc 4 0
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp Q         &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &apos_dqt_win
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &hml LCTRL A  &hml LALT R   &hml LGUI S   &hml LSHFT T  &kp G             &kp M         &hmr RSHFT N  &hmr RGUI E   &hmr LALT I   &hmr RCTRL O
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤               ├───────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &lt 7 Z       &kp X         &kp C         &kp D                           &kp K         &kp H         &kp COMMA     &kp DOT       &lt 7 NB_MINUS
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &lt_spcesc 3 0 &blt 5 TAB       &lt 6 ENTER   &lt_bspc 4 0
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "WIN";
         };
 
-numbers {
-    bindings = <
-&kp NB_TILDE  &kp LG(LC(Q))   &kp NB_PIPE  &kp NB_CARET  &kp NB_POUND_SIGN    &kp NB_STAR   &kp N7  &kp N8  &kp N9  &kp NB_GT
-&hml LCTRL NB_PRCNT  &hml LALT NB_DLLR  &hml LGUI NB_FSLH  &hml LSHFT NB_AMPS  &tog 4  &kp NB_PLUS   &kp N4  &kp N5  &kp N6  &kp NB_EQUAL
-&sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                          &kp N1  &kp N2  &kp N3 &kp NB_LT 
-                            &none         &none                              &kp DOT       &kp N0
-    >;
-    display-name = "NUM";
-};
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                         NUMBERS LAYER (Mac)                               ║
+        // ║  Number pad on right, symbols on left (32-key layout)                     ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
+        numbers {
+            bindings = <
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp NB_TILDE  &kp LG(LC(Q)) &kp NB_PIPE   &kp NB_CARET  &kp NB_POUND_SIGN &kp NB_STAR   &kp N7        &kp N8        &kp N9        &kp NB_GT
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &hml LCTRL NB_PRCNT &hml LALT NB_DLLR &hml LGUI NB_FSLH &hml LSHFT NB_AMPS &tog 4   &kp NB_PLUS   &kp N4        &kp N5        &kp N6        &kp NB_EQUAL
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                                   &kp N1        &kp N2        &kp N3        &kp NB_LT
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &none         &none             &kp DOT       &kp N0
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+            display-name = "NUM";
+        };
 
-numbers_win {
-    bindings = <
-&kp WNB_TILDE  &kp LG(L)   &kp WNB_PIPE  &kp WNB_CARET  &kp WNB_POUND_SIGN    &kp WNB_STAR   &kp N7  &kp N8  &kp N9  &kp NB_LT
-&hml LGUI WNB_PRCNT  &hml LALT WNB_DLLR  &hml LCTRL WNB_FSLH  &hml LSHFT WNB_AMPS  &tog 4                &kp WNB_PLUS   &kp N4  &kp N5  &kp N6  &kp WNB_EQUAL
-&sys_reset     &kp WNB_BSLH   &kp LC(C)      &kp LC(V)                            &kp N0         &kp N1  &kp N2  &kp N3
-                              &none          &none                                &kp DOT        &kp N0
-    >;
-    display-name = "NUM_WIN";
-};
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                      NUMBERS LAYER (Windows)                              ║
+        // ║  Number pad on right, symbols on left (Windows keycodes, 32-key layout)   ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
+        numbers_win {
+            bindings = <
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp WNB_TILDE &kp LG(L)     &kp WNB_PIPE  &kp WNB_CARET &kp WNB_POUND_SIGN &kp WNB_STAR  &kp N7        &kp N8        &kp N9        &kp NB_LT
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &hml LGUI WNB_PRCNT &hml LALT WNB_DLLR &hml LCTRL WNB_FSLH &hml LSHFT WNB_AMPS &tog 4  &kp WNB_PLUS  &kp N4        &kp N5        &kp N6        &kp WNB_EQUAL
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &sys_reset    &kp WNB_BSLH  &kp LC(C)     &kp LC(V)                                     &kp N0        &kp N1        &kp N2        &kp N3
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &none         &none             &kp DOT       &kp N0
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+            >;
+            display-name = "NUM_WIN";
+        };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                         NAVIGATION LAYER                                  ║
+        // ║  Arrow keys, page navigation, brightness, power, LED indicators            ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         nav {
             bindings = <
-    &vb_ind_con        &vb_ind_bat           &kp C_BRI_DEC &kp C_BRI_UP  &none      &none  &none            &kp C_SLEEP  &kp C_POWER  &bootloader
-  &kp LEFT  &kp DOWN      &kp UP        &kp RIGHT     &tog 4     &none  &kp RIGHT_SHIFT  &kp RGUI     &kp LALT     &kp RCTRL
-  &kp HOME  &kp PG_DN     &kp PG_UP     &kp END       &kp HOME         &none        &kp END      &sys_reset
-                                        &kp ESC       &kp TAB    &none  &none
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &vb_ind_con   &vb_ind_bat   &kp C_BRI_DEC &kp C_BRI_UP  &none             &none         &none         &kp C_SLEEP   &kp C_POWER   &bootloader
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &tog 4            &none         &kp RSHFT     &kp RGUI      &kp LALT      &kp RCTRL
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp HOME      &kp PG_DN     &kp PG_UP     &kp END                                       &none         &kp END       &sys_reset
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &kp ESC       &kp TAB           &none         &none
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "NAV";
         };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                        FUNCTION KEYS LAYER                                ║
+        // ║  Function keys (F1-F12), Bluetooth controls, LED indicators               ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         fn {
             bindings = <
-  &vb_bt_clr &vb_bt_sel 0  &vb_bt_sel 1  &vb_bt_sel 2      &none      &none  &kp F7  &kp F8  &kp F9  &kp F12
-  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHIFT  &kp DEL    &none  &kp F4  &kp F5  &kp F6  &kp F11
-  &none  &vb_ind_con   &vb_ind_bat    &studio_unlock        &kp F1  &kp F2  &kp F3  &kp F10
-                                 &none       &none      &none  &none
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &vb_bt_clr    &vb_bt_sel 0  &vb_bt_sel 1  &vb_bt_sel 2  &none             &none         &kp F7        &kp F8        &kp F9        &kp F12
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHIFT    &kp DEL           &none         &kp F4        &kp F5        &kp F6        &kp F11
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &none         &vb_ind_con   &vb_ind_bat   &studio_unlock                              &kp F1        &kp F2        &kp F3        &kp F10
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &none         &none             &none         &none
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "FUNC";
         };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                          MEDIA LAYER                                      ║
+        // ║  Media playback, volume, brightness controls, LED indicators              ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         controls {
             bindings = <
-  &kp Q       &kp W              &vb_ind_con       &vb_ind_bat     &kp T         &kp C_BRI_UP   &kp U      &kp I      &kp O     &soft_off
-  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_MUTE  &kp C_VOLUME_UP  &kp C_NEXT    &kp C_BRI_DN   &kp LSHFT  &kp RGUI   &kp LALT  &kp RCTRL
-  &kp Z       &kp X              &kp C       &kp V               &kp M      &kp COMMA  &kp DOT   &soft_off
-                                             &kp C_PAUSE      &trans        &trans  &trans
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &kp Q         &kp W         &vb_ind_con   &vb_ind_bat   &kp T             &kp C_BRI_UP  &kp U         &kp I         &kp O         &soft_off
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp C_PREV    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_NEXT        &kp C_BRI_DN  &kp LSHFT     &kp RGUI      &kp LALT      &kp RCTRL
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp Z         &kp X         &kp C         &kp V                                         &kp M         &kp COMMA     &kp DOT       &soft_off
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &kp C_PAUSE   &trans            &trans        &trans
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "MEDIA";
         };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                          MOUSE LAYER                                      ║
+        // ║  Mouse button controls (use trackball for movement)                       ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         mouse {
             bindings = <
-  &none      &none         &none     &none           &none        &none      &none            &none     &none         &none
-  &kp LCTRL  &kp LEFT_ALT  &kp LGUI  &kp LEFT_SHIFT  &none        &none      &kp RIGHT_SHIFT  &kp RGUI  &kp LEFT_ALT  &kp RCTRL
-  &none      &mo 9         &none     &none                                   &none            &none     &mo 9         &none
-                                     &mkp LCLK       &mkp RCLK    &mkp RCLK  &mkp LCLK
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHIFT    &none             &none         &kp RSHFT     &kp RGUI      &kp LALT      &kp RCTRL
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &none         &mo 9         &none         &none                                         &none         &none         &mo 9         &none
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &mkp LCLK     &mkp RCLK         &mkp RCLK     &mkp LCLK
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "MOUSE";
         };
 
+        // ╔═══════════════════════════════════════════════════════════════════════════╗
+        // ║                         SCROLL LAYER                                      ║
+        // ║  Scroll mode for trackball (all keys transparent)                         ║
+        // ╚═══════════════════════════════════════════════════════════════════════════╝
         scrolly_moly {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans
-                          &trans  &trans    &trans  &trans
+        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+             &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
+        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+             &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
+        // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
+             &trans        &trans        &trans        &trans                                        &trans        &trans        &trans        &trans
+        // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                                       &trans        &trans            &trans        &trans
+        //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
 
             display-name = "SCRL";
