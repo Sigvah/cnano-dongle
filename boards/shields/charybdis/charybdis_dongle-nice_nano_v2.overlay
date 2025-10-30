@@ -1,10 +1,14 @@
 // Board-specific overlay for nice!nano dongle with SH1106 OLED display
+// Override the dongle_display OLED configuration
 
 / {
     chosen {
         zephyr,display = &oled;
     };
 };
+
+// Delete the default OLED node from dongle_display shield if it exists
+/delete-node/ &{/soc/i2c@40003000/ssd1306@3c};
 
 &pro_micro_i2c {
     status = "okay";
