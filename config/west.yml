@@ -34,12 +34,12 @@ manifest:
       remote: englmaxi
       revision: main
 
-    - name: forager-zmk-module # <---
-      remote: carrefinho # <---
-      revision: main # <---
-    - name: zmk-rgbled-widget # <---
-      remote: caksoylar # <---
-      revision: main # <---
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: zmk-zephyr-4-1
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
 
     - name: zmk-tri-state
       remote: dhruvinsh
@@ -53,13 +53,13 @@ manifest:
           - zmk-fingerpunch-vik
           - zmk-fingerpunch-controllers
 
-    - name: prospector-zmk-module # <--- and these
-      remote: carrefinho # <---
-      revision: main # <---
-    - name: zmk-keyboards-visorbearer # <---
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: zmk-zephyr-4-1
+    - name: zmk-keyboards-visorbearer
       repo-path: visorbearer-zmk-module
-      remote: carrefinho # <---
-      revision: zmk-zephyr-4-1 # <---
+      remote: carrefinho
+      revision: zmk-zephyr-4-1
 
   self:
     path: config
