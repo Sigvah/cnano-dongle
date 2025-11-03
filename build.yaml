@@ -31,8 +31,8 @@ include:
   #   snippet: studio-rpc-usb-uart
   # - board: seeeduino_xiao_ble
   #   shield: forager_right rgbled_adapter
-  - board: xiao_ble
-    shield: charybdis_dongle prospector_adapter
+  # - board: xiao_ble
+  #   shield: charybdis_dongle prospector_adapter
   - board: xiao_ble
     shield: visorbearer
   #   snippet: studio-rpc-usb-uart
