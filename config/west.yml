@@ -44,9 +44,10 @@ manifest:
     - name: zmk-tri-state
       remote: dhruvinsh
       revision: main
-    - name: zmk-fingerpunch-keyboards
-      remote: sadekbaroudi
-      revision: main
+    # - name: zmk-fingerpunch-keyboards
+    #   remote: sadekbaroudi
+    #   revision: main
+    #   import: config/deps.yml
 
     - name: prospector-zmk-module # <--- and these
       remote: carrefinho # <---
