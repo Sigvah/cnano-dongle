@@ -41,9 +41,9 @@ manifest:
       remote: caksoylar # <---
       revision: main # <---
 
-    - name: zmk-tri-state
-      remote: dhruvinsh
-      revision: main
+    # - name: zmk-tri-state
+    #   remote: dhruvinsh
+    #   revision: main
     # - name: zmk-fingerpunch-keyboards
     #   remote: sadekbaroudi
     #   revision: main
