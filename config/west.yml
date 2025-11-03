@@ -14,10 +14,10 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    - name: sadekbaroudi
-      url-base: https://github.com/sadekbaroudi
-    - name: dhruvinsh
-      url-base: https://github.com/dhruvinsh
+    # - name: sadekbaroudi
+    #   url-base: https://github.com/sadekbaroudi
+    # - name: dhruvinsh
+    #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
   projects:
