@@ -47,7 +47,10 @@ manifest:
     - name: zmk-fingerpunch-keyboards
       remote: sadekbaroudi
       revision: main
-      import: config/deps.yml
+      import:
+        name-allowlist:
+          - zmk-fingerpunch-vik
+          - zmk-fingerpunch-controllers
 
     - name: prospector-zmk-module # <--- and these
       remote: carrefinho # <---
