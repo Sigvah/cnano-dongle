@@ -48,6 +48,7 @@ manifest:
       remote: sadekbaroudi
       revision: main
       import:
+        file: config/deps.yml
         name-allowlist:
           - zmk-fingerpunch-vik
           - zmk-fingerpunch-controllers
