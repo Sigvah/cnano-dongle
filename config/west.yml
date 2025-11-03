@@ -21,7 +21,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: refs/pull/3102/head
+      revision: main
       import: app/west.yml
 
     - name: zmk-pmw3610-driver
@@ -53,7 +53,7 @@ manifest:
     - name: zmk-keyboards-visorbearer # <---
       repo-path: visorbearer-zmk-module
       remote: carrefinho # <---
-      revision: feature/soft-off-and-naming-refactor # <---
+      revision: feature/zmk-zephyr-4-1 # <---
 
   self:
     path: config
