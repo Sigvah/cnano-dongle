@@ -1,0 +1,10 @@
+// SH1106 OLED Display Configuration for Dongle
+
+&oled {
+    compatible = "sinowealth,sh1106";
+    segment-offset = <2>;
+    segment-remap;
+    com-invdir;
+    multiplex-ratio = <63>;
+    prechargep = <0x22>;
+};
