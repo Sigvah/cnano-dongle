@@ -32,12 +32,11 @@ include:
     snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: forager_right rgbled_adapter
-  # Prospector adapter not compatible with Zephyr 3.5
-  # - board: xiao_ble
-  #   shield: charybdis_dongle prospector_adapter
   - board: xiao_ble
-    shield: visorbearer
-    snippet: studio-rpc-usb-uart
+    shield: charybdis_dongle prospector_adapter
+  # - board: xiao_ble
+  #   shield: visorbearer
+  #   snippet: studio-rpc-usb-uart
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: seeeduino_xiao_ble
