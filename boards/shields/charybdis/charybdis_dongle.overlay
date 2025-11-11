@@ -1,5 +1,6 @@
 #include "charybdis.dtsi"
 #include "split_input_common.dtsi"
+#include "st7789_display.dtsi"
 
 / {
     chosen {
