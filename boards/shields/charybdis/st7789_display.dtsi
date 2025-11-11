@@ -1,18 +1,18 @@
 /*
- * ST7789 Display Configuration for Zephyr 3.5
+ * ST7789 Display Configuration for xiao_ble with Zephyr 3.5
  * This provides the st7789 display node referenced by prospector_adapter
  */
 
-&pro_micro_spi {
+&xiao_spi {
     status = "okay";
-    cs-gpios = <&pro_micro 19 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
 
     st7789: st7789@0 {
         compatible = "sitronix,st7789v";
         reg = <0>;
         spi-max-frequency = <32000000>;
-        cmd-data-gpios = <&pro_micro 20 GPIO_ACTIVE_LOW>;
-        reset-gpios = <&pro_micro 21 GPIO_ACTIVE_LOW>;
+        cmd-data-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
         width = <240>;
         height = <240>;
         x-offset = <0>;
