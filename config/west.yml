@@ -26,9 +26,9 @@ manifest:
       revision: main
       import: app/west.yml
 
-    # - name: zmk-pmw3610-driver
-    #   remote: badjeff
-    #   revision: main
+    - name: zmk-pmw3610-driver
+      remote: badjeff
+      revision: main
 
     # - name: zmk-dongle-display
     #   remote: englmaxi
@@ -41,17 +41,17 @@ manifest:
       remote: caksoylar # <---
       revision: main # <---
 
-    # - name: zmk-tri-state
-    #   remote: dhruvinsh
-    #   revision: main
-    # - name: zmk-fingerpunch-keyboards
-    #   remote: sadekbaroudi
-    #   revision: main
-    #   import: config/deps.yml
+    - name: zmk-tri-state
+      remote: dhruvinsh
+      revision: main
+    - name: zmk-fingerpunch-keyboards
+      remote: sadekbaroudi
+      revision: main
+      import: config/deps.yml
 
-    # - name: prospector-zmk-module # <--- and these
-    #   remote: carrefinho # <---
-    #   revision: main # <---
+    - name: prospector-zmk-module # <--- and these
+      remote: carrefinho # <---
+      revision: main # <---
     - name: zmk-keyboards-visorbearer # <---
       repo-path: visorbearer-zmk-module
       remote: carrefinho # <---
