@@ -1,0 +1,8 @@
+// Board-specific overlay for xiao_ble charybdis dongle
+// Override prospector_adapter display configuration
+
+/ {
+    chosen {
+        /delete-property/ zephyr,display;
+    };
+};

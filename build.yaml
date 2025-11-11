@@ -18,15 +18,16 @@
 #
 ---
 include:
-  - board: nice_nano_v2
-    shield: charybdis_dongle dongle_display
-    cmake-args: -DDTC_OVERLAY_FILE="dongle_sh1106.overlay"
-  - board: nice_nano_v2
-    shield: charybdis_left
-  - board: nice_nano_v2
-    shield: charybdis_right
-  - board: nice_nano_v2
-    shield: settings_reset
+  # nice_nano_v2 board doesn't exist in Zephyr 4.1 - needs migration
+  # - board: nice_nano_v2
+  #   shield: charybdis_dongle dongle_display
+  #   cmake-args: -DDTC_OVERLAY_FILE="dongle_sh1106.overlay"
+  # - board: nice_nano_v2
+  #   shield: charybdis_left
+  # - board: nice_nano_v2
+  #   shield: charybdis_right
+  # - board: nice_nano_v2
+  #   shield: settings_reset
   # - board: seeeduino_xiao_ble
   #   shield: forager_left rgbled_adapter
   #   snippet: studio-rpc-usb-uart
