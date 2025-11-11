@@ -51,7 +51,7 @@ manifest:
 
     - name: prospector-zmk-module # <--- and these
       remote: carrefinho # <---
-      revision: main # <---
+      revision: fix/stability # <---
     - name: zmk-keyboards-visorbearer # <---
       repo-path: visorbearer-zmk-module
       remote: carrefinho # <---
