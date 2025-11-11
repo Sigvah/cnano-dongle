@@ -1,0 +1,8 @@
+// Board-specific overlay for seeeduino_xiao_ble charybdis dongle
+// Override prospector_adapter display configuration to disable it
+
+/ {
+    chosen {
+        /delete-property/ zephyr,display;
+    };
+};
