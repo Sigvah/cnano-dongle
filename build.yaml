@@ -20,7 +20,6 @@
 include:
   - board: nice_nano_v2
     shield: charybdis_dongle dongle_display
-    cmake-args: -DDTC_OVERLAY_FILE="dongle_sh1106.overlay"
   - board: nice_nano_v2
     shield: charybdis_left
   - board: nice_nano_v2
