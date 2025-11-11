@@ -30,9 +30,9 @@ manifest:
       remote: badjeff
       revision: main
 
-    # - name: zmk-dongle-display
-    #   remote: englmaxi
-    #   revision: main
+    - name: zmk-dongle-display
+      remote: englmaxi
+      revision: main
 
     - name: forager-zmk-module # <---
       remote: carrefinho # <---
