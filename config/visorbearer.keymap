@@ -92,11 +92,11 @@
         numbers {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp NB_TILDE  &kp LG(LC(Q)) &kp NB_PIPE   &kp NB_CARET  &kp NB_POUND_SIGN &kp NB_STAR   &kp N7        &kp N8        &kp N9        &kp NB_GT
+             &kp NB_TILDE  &kp LG(LC(Q)) &kp NB_PIPE   &kp NB_CARET  &kp NB_POUND_SIGN &kp NB_LT     &kp N7        &kp N8        &kp N9        &kp NB_STAR
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &hml LCTRL NB_PRCNT &hml LALT NB_DLLR &hml LGUI NB_FSLH &hml LSHFT NB_AMPS &tog 4   &kp NB_PLUS   &kp N4        &kp N5        &kp N6        &kp NB_EQUAL
+             &hml LCTRL NB_PRCNT &hml LALT NB_DLLR &hml LGUI NB_FSLH &hml LSHFT NB_AMPS &tog 4   &kp NB_GT     &kp N4        &kp N5        &kp N6        &kp NB_EQUAL
         // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
-             &sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                                   &kp N1        &kp N2        &kp N3        &kp NB_LT
+             &sys_reset    &kp NB_BSLH   &kp LG(C)     &kp LG(V)                                   &kp N1        &kp N2        &kp N3        &kp NB_PLUS
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        &none         &none             &kp DOT       &kp N0
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -111,11 +111,11 @@
         numbers_win {
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &kp WNB_TILDE &kp LG(L)     &kp WNB_PIPE  &kp WNB_CARET &kp WNB_POUND_SIGN &kp WNB_STAR  &kp N7        &kp N8        &kp N9        &kp NB_LT
+             &kp WNB_TILDE &kp LG(L)     &kp WNB_PIPE  &kp WNB_CARET &kp WNB_POUND_SIGN &kp NB_LT     &kp N7        &kp N8        &kp N9        &kp WNB_STAR
         // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &hml LGUI WNB_PRCNT &hml LALT WNB_DLLR &hml LCTRL WNB_FSLH &hml LSHFT WNB_AMPS &tog 4  &kp WNB_PLUS  &kp N4        &kp N5        &kp N6        &kp WNB_EQUAL
+             &hml LGUI WNB_PRCNT &hml LALT WNB_DLLR &hml LCTRL WNB_FSLH &hml LSHFT WNB_AMPS &tog 4  &kp NB_GT     &kp N4        &kp N5        &kp N6        &kp WNB_EQUAL
         // ├─────────────┼─────────────┼─────────────┼─────────────┤                               ├─────────────┼─────────────┼─────────────┼─────────────┤
-             &sys_reset    &kp WNB_BSLH  &kp LC(C)     &kp LC(V)                                     &kp N0        &kp N1        &kp N2        &kp N3
+             &sys_reset    &kp WNB_BSLH  &kp LC(C)     &kp LC(V)                                     &kp WNB_PLUS  &kp N1        &kp N2        &kp N3
         // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────╮   ╭─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                                        &none         &none             &kp DOT       &kp N0
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
