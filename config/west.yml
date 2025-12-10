@@ -21,7 +21,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: refs/pull/3102/head
+      revision: main
       import: app/west.yml
 
     - name: zmk-pmw3610-driver
