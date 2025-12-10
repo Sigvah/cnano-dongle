@@ -49,7 +49,7 @@ manifest:
 
     - name: prospector-zmk-module # <--- and these
       remote: carrefinho # <---
-      revision: fix/stability # <---
+      revision: main # <---
 
   self:
     path: config
