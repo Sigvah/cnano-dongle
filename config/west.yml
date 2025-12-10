@@ -47,9 +47,11 @@ manifest:
     #   revision: main
     #   import: config/deps.yml
 
-    - name: prospector-zmk-module # <--- and these
-      remote: carrefinho # <---
-      revision: main # <---
+    # Temporarily disabled due to Zephyr 4.1 Kconfig incompatibility
+    # LV_DISP_DEF_REFR_PERIOD defined without type in prospector module
+    # - name: prospector-zmk-module
+    #   remote: carrefinho
+    #   revision: main
 
   self:
     path: config
