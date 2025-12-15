@@ -16,9 +16,6 @@ include:
     repo-path: visorbearer-zmk-module # <---
     remote: carrefinho # <---
     revision: main # <---
-  - board: xiao_ble
-    shield: visorbearer
-    snippet: studio-rpc-usb-uart
   # Temporarily disabled due to Zephyr 4.1 Kconfig incompatibility in prospector-zmk-module
   # - board: xiao_ble
   #   shield: charybdis_dongle prospector_adapter
