@@ -29,7 +29,7 @@ manifest:
       revision: main
 
     - name: zmk-dongle-display
-      remote: englmaxi
+      remote: sigvah
       revision: main
 
     - name: forager-zmk-module # <---

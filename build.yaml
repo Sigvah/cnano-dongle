@@ -12,12 +12,19 @@ include:
     snippet: studio-rpc-usb-uart
   - board: xiao_ble
     shield: forager_right rgbled_adapter
+  - name: zmk-keyboards-visorbearer # <---
+    repo-path: visorbearer-zmk-module # <---
+    remote: carrefinho # <---
+    revision: main # <---
+  - board: xiao_ble
+    shield: visorbearer
+    snippet: studio-rpc-usb-uart
+  - board: xiao_ble
+    shield: settings_reset
   # Temporarily disabled due to Zephyr 4.1 Kconfig incompatibility in prospector-zmk-module
   # - board: xiao_ble
   #   shield: charybdis_dongle prospector_adapter
   #   snippet: studio-rpc-usb-uart
-  # - board: xiao_ble
-  #   shield: settings_reset
   # - board: xiao_ble
   #   shield: bykeeb_left
   # - board: xiao_ble
