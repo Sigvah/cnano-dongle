@@ -11,7 +11,7 @@
     status = "okay";
 
     oled: ssd1306@3c {
-        compatible = "sinowealth,sh1106";
+        compatible = "sinowealth,sh1106-i2c";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
