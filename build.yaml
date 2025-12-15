@@ -12,8 +12,8 @@ include:
     snippet: studio-rpc-usb-uart
   - board: xiao_ble
     shield: forager_right rgbled_adapter
-  - board: xiao_ble
-    shield: charybdis_dongle prospector_adapter
+  # - board: xiao_ble
+  #   shield: charybdis_dongle prospector_adapter
   #   snippet: studio-rpc-usb-uart
   # - board: xiao_ble
   #   shield: settings_reset
