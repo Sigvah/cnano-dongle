@@ -53,9 +53,9 @@ manifest:
 
     # Temporarily disabled due to Zephyr 4.1 Kconfig incompatibility
     # LV_DISP_DEF_REFR_PERIOD defined without type in prospector module
-    # - name: prospector-zmk-module
-    #   remote: carrefinho
-    #   revision: main
+    - name: prospector-zmk-module
+      remote: sigvah
+      revision: main
 
   self:
     path: config
