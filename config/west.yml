@@ -55,7 +55,7 @@ manifest:
     # LV_DISP_DEF_REFR_PERIOD defined without type in prospector module
     - name: prospector-zmk-module
       remote: sigvah
-      revision: main
+      revision: claude/fix-zmk-usb-config-lHptF
 
   self:
     path: config
