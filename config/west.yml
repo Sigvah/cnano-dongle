@@ -51,8 +51,6 @@ manifest:
     #   revision: main
     #   import: config/deps.yml
 
-    # Temporarily disabled due to Zephyr 4.1 Kconfig incompatibility
-    # LV_DISP_DEF_REFR_PERIOD defined without type in prospector module
     - name: prospector-zmk-module
       remote: sigvah
       revision: claude/fix-zmk-usb-config-lHptF
