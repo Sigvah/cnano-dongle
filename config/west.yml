@@ -52,8 +52,8 @@ manifest:
     #   import: config/deps.yml
 
     - name: prospector-zmk-module
-      remote: sigvah
-      revision: claude/fix-zmk-usb-config-lHptF
+      remote: carrefinho
+      revision: core/zephyr-4-1
 
   self:
     path: config
