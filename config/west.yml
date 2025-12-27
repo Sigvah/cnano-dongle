@@ -32,12 +32,12 @@ manifest:
       remote: englmaxi
       revision: main
 
-    - name: forager-zmk-module # <---
-      remote: carrefinho # <---
-      revision: main # <---
-    - name: zmk-rgbled-widget # <---
-      remote: caksoylar # <---
-      revision: main # <---
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
 
     # - name: zmk-tri-state
     #   remote: dhruvinsh
@@ -47,9 +47,9 @@ manifest:
     #   revision: main
     #   import: config/deps.yml
 
-    - name: prospector-zmk-module # <--- and these
-      remote: carrefinho # <---
-      revision: fix/stability # <---
+    - name: prospector-zmk-module
+      remote: carrefinho
+      revision: core/zephyr-4-1
 
   self:
     path: config
