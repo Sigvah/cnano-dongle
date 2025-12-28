@@ -53,7 +53,7 @@ manifest:
 
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: core/zephyr-4-1
+      revision: feature/new-status-screens
 
   self:
     path: config
