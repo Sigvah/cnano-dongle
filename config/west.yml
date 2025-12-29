@@ -29,15 +29,19 @@ manifest:
       revision: main
 
     - name: zmk-dongle-display
-      remote: englmaxi
+      remote: sigvah
       revision: main
 
-    - name: forager-zmk-module
-      remote: carrefinho
-      revision: main
-    - name: zmk-rgbled-widget
-      remote: caksoylar
-      revision: main
+    - name: forager-zmk-module # <---
+      remote: carrefinho # <---
+      revision: main # <---
+    - name: zmk-rgbled-widget # <---
+      remote: caksoylar # <---
+      revision: main # <---
+    - name: zmk-keyboards-visorbearer # <---
+      repo-path: visorbearer-zmk-module # <---
+      remote: carrefinho # <---
+      revision: main # <---
 
     # - name: zmk-tri-state
     #   remote: dhruvinsh
@@ -49,7 +53,7 @@ manifest:
 
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: core/zephyr-4-1
+      revision: feat/new-status-screens
 
   self:
     path: config
