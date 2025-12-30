@@ -1,0 +1,250 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+// Curly braces - Mac version
+        combo_curly_braces_mac {
+            timeout-ms = <25>;
+            bindings = <&kp NB_LBRC>;  // {
+            key-positions = <1 11>;
+            layers = <0>;
+        };
+
+        combo_curly_braces_right_mac {
+            timeout-ms = <25>;
+            bindings = <&kp NB_RBRC>;  // }
+            key-positions = <8 18>;
+            layers = <0>;
+        };
+
+        // Curly braces - Windows version
+        combo_curly_braces_win {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_LBRC>;  // {
+            key-positions = <1 11>;
+            layers = <1>;
+        };
+
+        combo_curly_braces_right_win {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_RBRC>;  // }
+            key-positions = <8 18>;
+            layers = <1>;
+        };
+
+        // Square brackets - same on both
+        combo_square_brackets {
+            timeout-ms = <25>;
+            bindings = <&kp NB_LBKT>;  // [
+            key-positions = <2 12>;
+        };
+
+        combo_square_brackets_right {
+            timeout-ms = <25>;
+            bindings = <&kp NB_RBKT>;  // ]
+            key-positions = <7 17>;
+        };
+
+        // Parentheses - same on both
+        combo_parentheses {
+            timeout-ms = <25>;
+            bindings = <&kp NB_LPAR>;  // (
+            key-positions = <3 13>;
+        };
+
+        combo_parentheses_right {
+            timeout-ms = <25>;
+            bindings = <&kp NB_RPAR>;  // )
+            key-positions = <6 16>;
+        };
+        combo_g {
+            timeout-ms = <50>;
+            bindings = <&kp G>;  // 
+            key-positions = <4 14>;
+        };
+
+        combo_m {
+            timeout-ms = <50>;
+            bindings = <&kp M>;  // >
+            key-positions = <5 15>;
+        };
+
+        combo_o_slash {
+            timeout-ms = <40>;
+            bindings = <&kp SEMI>;  // ø
+            key-positions = <7 8>;
+        };
+
+        combo_a_ring {
+            timeout-ms = <40>;
+            bindings = <&kp LBKT>;  // å
+            key-positions = <25 26>;
+        };
+        combo_ques {
+            timeout-ms = <40>;
+            key-positions = <7 6>;  // @
+            bindings = <&ques_excl>;
+        };
+
+        ae {
+            timeout-ms = <40>;
+            bindings = <&kp APOS>; // æ
+            key-positions = <3 2>;
+        };
+        combo_v {                          // v
+            timeout-ms = <25>;
+            bindings = <&kp V>;
+            key-positions = <1 2>;
+        };
+
+        combo_j {                          // j
+            timeout-ms = <25>;
+            bindings = <&kp J>;
+            key-positions = <21 22>;
+        };
+
+        combo_at {
+            timeout-ms = <25>;
+            bindings = <&kp NB_AT>;
+            key-positions = <2 7>;
+            layers = <0>;
+        };
+
+        win_at {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_AT_SIGN>;
+            key-positions = <2 7>;
+            layers = <1>;
+        };
+
+        hash_combo {
+            timeout-ms = <25>;
+            bindings = <&kp NB_HASH>;
+            key-positions = <23 24>;
+        };
+
+        grave_combo {
+            timeout-ms = <25>;
+            bindings = <&kp NB_GRAVE>;
+            key-positions = <1 8>;
+            layers = <0>;
+        };
+
+        grave_combo_win {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_GRAVE>;
+            key-positions = <1 8>;
+            layers = <1>;
+        };
+
+        caps_word_combo {
+            timeout-ms = <25>;
+            bindings = <&caps_word>;
+            key-positions = <11 18>;
+        };
+
+        btn1_r {
+            timeout-ms = <25>;
+            bindings = <&mkp MB1>;
+            key-positions = <16 24>;
+        };
+
+        mb2_r {
+            timeout-ms = <25>;
+            bindings = <&mkp MB2>;
+            key-positions = <17 25>;
+        };
+
+        scrl_r {
+            timeout-ms = <25>;
+            bindings = <&mo 8>;
+            key-positions = <18 26>;
+        };
+
+        btn_1_l {
+            bindings = <&mkp MB1>;
+            key-positions = <13 23>;
+            timeout-ms = <25>;
+        };
+
+        btn2_l {
+            bindings = <&mkp MB2>;
+            key-positions = <12 22>;
+            timeout-ms = <25>;
+        };
+
+        scrl_l {
+            bindings = <&mo 8>;
+            key-positions = <11 21>;
+            timeout-ms = <25>;
+        };
+                l_sshift {
+            require-prior-idle-ms = <0>;
+            timeout-ms = <25>;
+            bindings = <&sk LSHIFT>;
+            key-positions =<11 12>;
+        };
+        r_sshift {
+            require-prior-idle-ms = <0>;
+            timeout-ms = <25>;
+            bindings = <&sk RSHIFT>;
+            key-positions =<17 18>;
+        };
+        amp_combo {
+            timeout-ms = <25>;
+            bindings = <&kp NB_AMPS>;  // &
+            key-positions = <13 16>;
+        };
+
+        dollar_combo {
+            timeout-ms = <25>;
+            bindings = <&kp NB_DLLR>;  // $
+            key-positions = <12 17>;
+            layers = <0>;
+        };
+
+        dollar_win {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_DLLR>;  // $
+            key-positions = <12 17>;
+            layers = <1>;
+        };
+
+        pnd_mac {
+            timeout-ms = <25>;
+            bindings = <&kp NB_POUND_SIGN>;  // £
+            key-positions = <3 6>;
+            layers = <0>;
+        };
+
+        pnd_win {
+            timeout-ms = <25>;
+            bindings = <&kp WNB_POUND_SIGN>;  // £
+            key-positions = <3 6>;
+            layers = <1>;
+        };
+
+        win_def {
+            timeout-ms = <25>;
+            bindings = <&tog 1>;  // Toggle Windows layer
+            key-positions = <28 30>;
+        };
+
+        thumb_esc {
+            timeout-ms = <25>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <28 29>;
+        };
+
+        thumb_r {
+            timeout-ms = <50>;
+            bindings = <&sk LA(LC(LG(LEFT_SHIFT)))>;  // HYPER
+            key-positions = <30 31>;
+        };
+        soft_off_combo {
+            timeout-ms = <50>;
+            bindings = <&vb_soft_off>;
+            key-positions = <4 5 14 15>;
+        };
+    };
+};

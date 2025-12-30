@@ -4,20 +4,52 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: badjeff
       url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+    - name: sigvah
+      url-base: https://github.com/sigvah
+    - name: carrefinho
+      url-base: https://github.com/carrefinho
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
+    # - name: sadekbaroudi
+    #   url-base: https://github.com/sadekbaroudi
+    # - name: dhruvinsh
+    #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
-    # Additional modules containing boards/shields/custom code can be listed here as well
-    # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: pull/2188/head
+      revision: refs/pull/3102/head
       import: app/west.yml
+
     - name: zmk-pmw3610-driver
       remote: badjeff
       revision: main
+
     - name: zmk-dongle-display
       remote: englmaxi
       revision: main
+
+    - name: forager-zmk-module # <---
+      remote: carrefinho # <---
+      revision: main # <---
+    - name: zmk-rgbled-widget # <---
+      remote: caksoylar # <---
+      revision: main # <---
+
+    # - name: zmk-tri-state
+    #   remote: dhruvinsh
+    #   revision: main
+    # - name: zmk-fingerpunch-keyboards
+    #   remote: sadekbaroudi
+    #   revision: main
+    #   import: config/deps.yml
+
+    - name: prospector-zmk-module # <--- and these
+      remote: carrefinho # <---
+      revision: main # <---
+
   self:
     path: config
