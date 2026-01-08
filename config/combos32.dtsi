@@ -92,13 +92,13 @@
             key-positions = <3 2>;
         };
         combo_v {                          // v
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             bindings = <&kp V>;
             key-positions = <1 2>;
         };
 
         combo_j {                          // j
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             bindings = <&kp J>;
             key-positions = <21 22>;
         };
