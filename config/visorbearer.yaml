@@ -1,0 +1,107 @@
+layout:
+  ortho_layout: {split: true, rows: 3, columns: 5, thumbs: 2, drop_inner: true}
+layers:
+  DEF:
+    - [Q, W, F, P, B, M, L, U, Y, "'"]
+    - [{h: Ctrl, t: A}, {h: Alt, t: R}, {h: Gui, t: S}, {h: Shift, t: T}, G, K, {h: Shift, t: N}, {h: Gui, t: E}, {h: Alt, t: I}, {h: Ctrl, t: O}]
+    - [{h: "7", t: Z}, X, C, D, H, ",", ".", {h: "7", t: "-"}]
+    - {h: NUM, t: "Spc/Esc"}
+    - {h: FN, t: Tab}
+    - {h: CONTROLS, t: Enter}
+    - {h: NAV, t: "Bspc"}
+  WIN:
+    - [Q, W, F, P, B, J, L, U, Y, "'"]
+    - [{h: Ctrl, t: A}, {h: Alt, t: R}, {h: Gui, t: S}, {h: Shift, t: T}, V, K, {h: Shift, t: N}, {h: Gui, t: E}, {h: Alt, t: I}, {h: Ctrl, t: O}]
+    - [{h: "7", t: Z}, X, C, D, H, ",", ".", {h: "7", t: "-"}]
+    - {h: NUM_WIN, t: "Spc/Esc"}
+    - {h: FN, t: Tab}
+    - {h: CONTROLS, t: Enter}
+    - {h: NAV, t: "Bspc"}
+  NUM:
+    - ["~", "Cmd+Ctrl+Q", "|", "^", "#", "*", "7", "8", "9", ">"]
+    - [{h: Ctrl, t: "%"}, {h: Alt, t: "$"}, {h: Gui, t: "/"}, {h: Shift, t: "&"}, {t: "tog 4"}, "+", "4", "5", "6", "="]
+    - ["sys_reset", "\\", "Cmd+C", "Cmd+V", "1", "2", "3", "<"]
+    - null
+    - null
+    - "."
+    - "0"
+  NUM_WIN:
+    - ["~", "Win+L", "|", "^", "#", "*", "7", "8", "9", "<"]
+    - [{h: Gui, t: "%"}, {h: Alt, t: "$"}, {h: Ctrl, t: "/"}, {h: Shift, t: "&"}, {t: "tog 4"}, "+", "4", "5", "6", "="]
+    - ["sys_reset", "\\", "Ctrl+C", "Ctrl+V", "0", "1", "2", "3"]
+    - null
+    - null
+    - "."
+    - "0"
+  NAV:
+    - ["vb_ind_con", "vb_ind_bat", "BRI_DEC", "BRI_UP", null, null, null, "C_SLEEP", "C_POWER", "bootloader"]
+    - [Left, Down, Up, Right, {t: "tog 4"}, null, Shift, Gui, Alt, Ctrl]
+    - [Home, PgDown, PgUp, End, null, End, "sys_reset"]
+    - Esc
+    - Tab
+    - null
+    - null
+  FN:
+    - ["vb_bt_clr", {t: "vb_bt_sel 0"}, {t: "vb_bt_sel 1"}, {t: "vb_bt_sel 2"}, null, null, F7, F8, F9, F12]
+    - [Ctrl, Alt, Gui, Shift, Delete, null, F4, F5, F6, F11]
+    - [null, "vb_ind_con", "vb_ind_bat", "studio_unlock", F1, F2, F3, F10]
+    - null
+    - null
+    - null
+    - null
+  CONTROLS:
+    - [Q, W, "vb_ind_con", "vb_ind_bat", T, "C_BRI_UP", U, I, O, "soft_off"]
+    - [C_PREV, C_VOL_DN, C_MUTE, C_VOL_UP, C_NEXT, "C_BRI_DN", Shift, Gui, Alt, Ctrl]
+    - [Z, X, C, V, M, ",", ".", "soft_off"]
+    - "C_PAUSE"
+    - {type: trans}
+    - {type: trans}
+    - {type: trans}
+  MOUSE:
+    - [null, null, null, null, null, null, null, null, null, null]
+    - [Ctrl, Alt, Gui, Shift, null, null, Shift, Gui, Alt, Ctrl]
+    - [null, {t: "mo 9"}, null, null, null, null, {t: "mo 9"}, null]
+    - "mkp LCLK"
+    - "mkp RCLK"
+    - "mkp RCLK"
+    - "mkp LCLK"
+combos:
+  - {p: [1, 11], k: "{", l: ["DEF"]}
+  - {p: [8, 18], k: "}", l: ["DEF"]}
+  - {p: [1, 11], k: "{", l: ["WIN"]}
+  - {p: [8, 18], k: "}", l: ["WIN"]}
+  - {p: [2, 12], k: "["}
+  - {p: [7, 17], k: "]"}
+  - {p: [3, 13], k: "("}
+  - {p: [6, 16], k: ")"}
+  - {p: [4, 14], k: "G"}
+  - {p: [5, 15], k: "M"}
+  - {p: [7, 8], k: "ø"}
+  - {p: [25, 26], k: "å"}
+  - {p: [7, 6], k: "?"}
+  - {p: [3, 2], k: "æ"}
+  - {p: [1, 2], k: "V"}
+  - {p: [21, 22], k: "J"}
+  - {p: [2, 7], k: "@", l: ["DEF"]}
+  - {p: [2, 7], k: "@", l: ["WIN"]}
+  - {p: [23, 24], k: "#"}
+  - {p: [1, 8], k: "`", l: ["DEF"]}
+  - {p: [1, 8], k: "`", l: ["WIN"]}
+  - {p: [11, 18], k: "caps_word"}
+  - {p: [16, 24], k: "MB1"}
+  - {p: [17, 25], k: "MB2"}
+  - {p: [18, 26], k: "mo 8"}
+  - {p: [13, 23], k: "MB1"}
+  - {p: [12, 22], k: "MB2"}
+  - {p: [11, 21], k: "mo 8"}
+  - {p: [11, 12], k: "sk LSHIFT"}
+  - {p: [17, 18], k: "sk RSHIFT"}
+  - {p: [13, 16], k: "&"}
+  - {p: [12, 17], k: "$", l: ["DEF"]}
+  - {p: [12, 17], k: "$", l: ["WIN"]}
+  - {p: [3, 6], k: "£", l: ["DEF"]}
+  - {p: [3, 6], k: "£", l: ["WIN"]}
+  - {p: [28, 30], k: "tog 1"}
+  - {p: [28, 29], k: "Esc"}
+  - {p: [30, 31], k: "HYPER"}
+  - {p: [4, 5, 14, 15], k: "soft_off"}
