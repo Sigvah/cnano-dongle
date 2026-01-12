@@ -10,7 +10,7 @@
         combo_o_slash {                    // ø
             timeout-ms = <40>;
             bindings = <&kp SEMI>;
-            key-positions = <7 8>;
+            key-positions = <21 22>;
         };
 
         combo_a_ring {                     // å
@@ -33,7 +33,7 @@
         combo_j {                          // j
             timeout-ms = <25>;
             bindings = <&kp J>;
-            key-positions = <21 22>;
+            key-positions = <7 8>;
         };
 
         // ============================================
