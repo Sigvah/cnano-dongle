@@ -41,7 +41,7 @@ manifest:
     - name: zmk-keyboards-visorbearer # <---
       repo-path: visorbearer-zmk-module # <---
       remote: carrefinho # <---
-      revision: main # <---
+      revision: lp5012-pm # <---
 
     # - name: zmk-tri-state
     #   remote: dhruvinsh
