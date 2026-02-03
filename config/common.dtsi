@@ -12,3 +12,4 @@
 &lt { quick-tap-ms = <175>; };
 
 #define MEH LC(LA(LGUI))
+#define HYPER LC(LA(LS(LGUI)))
