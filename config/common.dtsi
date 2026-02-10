@@ -11,5 +11,5 @@
 // Layer tap configuration
 &lt { quick-tap-ms = <175>; };
 
-#define MEH LC(LA(LCMD))
-#define HYPER LC(LA(LS(LCMD)))
+#define MEH LC(LA(RCMD))
+#define HYPER LC(LA(LS(RCMD)))
