@@ -12,7 +12,7 @@ include:
   #  snippet: studio-rpc-usb-uart
   #- board: xiao_ble
   #  shield: forager_right rgbled_adapter
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: visorbearer
     snippet: studio-rpc-usb-uart
 #  - board: xiao_ble
