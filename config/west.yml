@@ -32,12 +32,16 @@ manifest:
       remote: englmaxi
       revision: main
 
-    - name: forager-zmk-module # <---
-      remote: carrefinho # <---
-      revision: main # <---
-    - name: zmk-rgbled-widget # <---
-      remote: caksoylar # <---
-      revision: main # <---
+    - name: forager-zmk-module
+      remote: carrefinho
+      revision: main
+    - name: zmk-rgbled-widget
+      remote: caksoylar
+      revision: main
+    - name: zmk-keyboards-visorbearer
+      repo-path: visorbearer-zmk-module
+      remote: carrefinho
+      revision: main
 
     # - name: zmk-tri-state
     #   remote: dhruvinsh
