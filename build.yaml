@@ -1,6 +1,6 @@
 include:
-  #- board: nice_nano//zmk
-  #  shield: charybdis_dongle dongle_display
+  - board: nice_nano//zmk
+    shield: charybdis_dongle
 
   - board: nice_nano//zmk
     shield: charybdis_left
