@@ -19,12 +19,9 @@ manifest:
     - name: englmaxi
       url-base: https://github.com/englmaxi
 
-#ESB stuff
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    #ESB stuff
     - name: nrfconnect
       url-base: https://github.com/nrfconnect
-
 
   projects:
     - name: zmk
@@ -63,7 +60,7 @@ manifest:
       remote: carrefinho
       revision: feat/new-status-screens
 
-#ESB stuff
+    #ESB stuff
     - name: zmk-feature-split-esb
       remote: badjeff
       revision: main
