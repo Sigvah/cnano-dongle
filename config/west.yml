@@ -18,6 +18,14 @@ manifest:
     #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
+
+#ESB stuff
+    - name: badjeff
+      url-base: https://github.com/badjeff
+    - name: nrfconnect
+      url-base: https://github.com/nrfconnect
+
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -54,6 +62,20 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
+
+#ESB stuff
+    - name: zmk-feature-split-esb
+      remote: badjeff
+      revision: main
+    - name: sdk-nrf
+      remote: badjeff
+      revision: v3.1-branchzmk-fixes
+      path: nrf
+    - name: nrfxlib
+      remote: nrfconnect
+      revision: v3.1-branch
+      repo-path: sdk-nrfxlib
+      path: nrfxlib
 
   self:
     path: config
