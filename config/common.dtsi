@@ -12,4 +12,4 @@
 &lt { quick-tap-ms = <175>; };
 
 #define MEH RC(RA(RCMD))
-#define HYPER RC(RA(RS(RCMD)))
+#define HYP RC(RA(RS(RCMD)))
