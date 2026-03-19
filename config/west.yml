@@ -66,7 +66,7 @@ manifest:
       revision: main
     - name: sdk-nrf
       remote: badjeff
-      revision: v3.1-branchzmk-fixes
+      revision: v3.1-branch%2Bzmk-fixes
       path: nrf
     - name: nrfxlib
       remote: nrfconnect
