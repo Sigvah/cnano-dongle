@@ -69,6 +69,11 @@ manifest:
       revision: v3.1-branch
       repo-path: sdk-nrfxlib
       path: nrfxlib
+    - name: oberon-psa-crypto
+      remote: nrfconnect
+      repo-path: sdk-oberon-psa-crypto
+      revision: ncs-v3.1.1
+      path: modules/crypto/oberon-psa-crypto
 
   self:
     path: config
