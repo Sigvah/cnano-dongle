@@ -19,10 +19,6 @@ manifest:
     - name: englmaxi
       url-base: https://github.com/englmaxi
 
-    #ESB stuff
-    - name: nrfconnect
-      url-base: https://github.com/nrfconnect
-
   projects:
     - name: zmk
       remote: zmkfirmware

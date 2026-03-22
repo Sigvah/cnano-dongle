@@ -20,3 +20,13 @@
 &trackball_listener2 {
     status = "okay";
 };
+
+/ {
+    esb_split {
+        compatible = "zmk,esb-split";
+        // Must match addresses on charybdis_left.overlay and charybdis_right.overlay
+        base-addr-0 = <0xE7 0xE7 0xE7 0xE7>;
+        base-addr-1 = <0xC2 0xC2 0xC2 0xC2>;
+        addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    };
+};
