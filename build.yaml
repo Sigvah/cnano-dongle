@@ -16,11 +16,14 @@ include:
     snippet: studio-rpc-usb-uart
 
   # Debug builds: USB serial logging to diagnose the ESB link.
-  # Flash the one matching your dongle board, open the serial console.
+  # Distinct artifact-name so they don't collide with the normal dongle
+  # builds above (the snippet alone is not part of the artifact name).
   - board: nice_nano//zmk
     shield: charybdis_dongle
     snippet: zmk-usb-logging
+    artifact-name: charybdis_dongle-nice_nano-logging
 
   - board: xiao_ble//zmk
     shield: charybdis_dongle
     snippet: zmk-usb-logging
+    artifact-name: charybdis_dongle-xiao_ble-logging
