@@ -12,17 +12,5 @@ include:
     shield: settings_reset
 
   - board: xiao_ble//zmk
-    shield: forager_left rgbled_adapter
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: forager_right rgbled_adapter
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: visorbearer
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
     shield: charybdis_dongle
     snippet: studio-rpc-usb-uart
