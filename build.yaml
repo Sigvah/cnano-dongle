@@ -14,3 +14,13 @@ include:
   - board: xiao_ble//zmk
     shield: charybdis_dongle
     snippet: studio-rpc-usb-uart
+
+  # Debug builds: USB serial logging to diagnose the ESB link.
+  # Flash the one matching your dongle board, open the serial console.
+  - board: nice_nano//zmk
+    shield: charybdis_dongle
+    snippet: zmk-usb-logging
+
+  - board: xiao_ble//zmk
+    shield: charybdis_dongle
+    snippet: zmk-usb-logging
