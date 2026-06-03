@@ -59,6 +59,7 @@ manifest:
 
     - name: zmk-split-esb
       remote: kumbung01
+      repo-path: zmk-feature-split-esb
       revision: main
     - name: sdk-nrf
       remote: kumbung01
