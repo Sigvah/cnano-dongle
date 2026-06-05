@@ -54,8 +54,8 @@ manifest:
     #   import: config/deps.yml
 
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: sigvah
+      revision: main
 
     - name: zmk-split-esb
       remote: kumbung01
