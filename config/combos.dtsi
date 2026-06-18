@@ -24,15 +24,15 @@
             bindings = <&kp APOS>;
             key-positions = <3 2>;
         };
-        combo_v {                          // v
+        combo_v {                          // j
             timeout-ms = <25>;
-            bindings = <&kp V>;
+            bindings = <&kp J>;
             key-positions = <1 2>;
         };
 
-        combo_j {                          // j
+        combo_j {                          // v
             timeout-ms = <25>;
-            bindings = <&kp J>;
+            bindings = <&kp V>;
             key-positions = <7 8>;
         };
 
