@@ -18,6 +18,8 @@ manifest:
     #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: kumbung01
+      url-base: https://github.com/kumbung01
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -52,8 +54,22 @@ manifest:
     #   import: config/deps.yml
 
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: sigvah
+      revision: main
+
+    - name: zmk-split-esb
+      remote: kumbung01
+      repo-path: zmk-feature-split-esb
+      revision: main
+    - name: sdk-nrf
+      remote: kumbung01
+      revision: v3.1-branch-tdma-fhss
+      path: nrf
+    - name: nrfxlib
+      remote: nrfconnect
+      revision: v3.1-branch
+      repo-path: sdk-nrfxlib
+      path: nrfxlib
 
   self:
     path: config
