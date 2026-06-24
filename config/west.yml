@@ -12,14 +12,10 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    # - name: sadekbaroudi
-    #   url-base: https://github.com/sadekbaroudi
-    # - name: dhruvinsh
-    #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
-    - name: kumbung01
-      url-base: https://github.com/kumbung01
+    - name: damex
+      url-base: https://github.com/damex
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -45,31 +41,13 @@ manifest:
       remote: carrefinho
       revision: main
 
-    # - name: zmk-tri-state
-    #   remote: dhruvinsh
-    #   revision: main
-    # - name: zmk-fingerpunch-keyboards
-    #   remote: sadekbaroudi
-    #   revision: main
-    #   import: config/deps.yml
-
     - name: prospector-zmk-module
       remote: sigvah
       revision: main
 
-    - name: zmk-split-esb
-      remote: kumbung01
-      repo-path: zmk-feature-split-esb
-      revision: main
-    - name: sdk-nrf
-      remote: kumbung01
-      revision: v3.1-branch-tdma-fhss
-      path: nrf
-    - name: nrfxlib
-      remote: nrfconnect
-      revision: v3.1-branch
-      repo-path: sdk-nrfxlib
-      path: nrfxlib
+    - name: zmk-feature-split-esb
+      remote: damex
+      revision: v0.2.3
 
   self:
     path: config

@@ -1,11 +1,21 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
-    esb_split {
-        compatible = "zmk,esb-split";
-        base-addr-0 = <0xE7 0xE7 0xE7 0xE7>;
-        base-addr-1 = <0xC2 0xC2 0xC2 0xC2>;
-        addr-prefix = <0xE7 0xC2 0xC3 0xC4 0xC5 0xC6 0xC7 0xC8>;
+    esb_link {
+        compatible = "zmk,split-esb";
+        base-address = [E7 E7 E7 E7];
+        peripherals {
+            right: peripheral_right {
+                pipe = <0>;
+                prefix = <0xE7>;
+                weight = <1>;
+            };
+            left: peripheral_left {
+                pipe = <1>;
+                prefix = <0xC3>;
+                weight = <1>;
+            };
+        };
     };
 
     chosen {
