@@ -2,6 +2,8 @@
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
 
+/ { chosen { zmk,esb-self = &right; }; };
+
 &default_transform {
 	col-offset = <6>;
 };

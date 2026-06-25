@@ -1,6 +1,23 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    esb_link {
+        compatible = "zmk,split-esb";
+        base-address = [E7 E7 E7 E7];
+        peripherals {
+            right: peripheral_right {
+                pipe = <0>;
+                prefix = <0xE7>;
+                weight = <1>;
+            };
+            left: peripheral_left {
+                pipe = <1>;
+                prefix = <0xC3>;
+                weight = <1>;
+            };
+        };
+    };
+
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;

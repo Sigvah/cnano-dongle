@@ -12,12 +12,10 @@ manifest:
       url-base: https://github.com/carrefinho
     - name: caksoylar
       url-base: https://github.com/caksoylar
-    # - name: sadekbaroudi
-    #   url-base: https://github.com/sadekbaroudi
-    # - name: dhruvinsh
-    #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: damex
+      url-base: https://github.com/damex
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -43,17 +41,14 @@ manifest:
       remote: carrefinho
       revision: main
 
-    # - name: zmk-tri-state
-    #   remote: dhruvinsh
-    #   revision: main
-    # - name: zmk-fingerpunch-keyboards
-    #   remote: sadekbaroudi
-    #   revision: main
-    #   import: config/deps.yml
-
     - name: prospector-zmk-module
-      remote: carrefinho
-      revision: feat/new-status-screens
+      remote: sigvah
+      revision: main
+
+    - name: zmk-feature-split-esb
+      remote: damex
+      revision: v0.3.6
+      import: true
 
   self:
     path: config
