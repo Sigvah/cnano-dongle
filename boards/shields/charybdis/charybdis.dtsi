@@ -4,8 +4,6 @@
     esb_link {
         compatible = "zmk,split-esb";
         base-address = [E7 E7 E7 E7];
-        /* FHSS across the guard gaps between WiFi channels 1/6/11 */
-        hop-channels = /bits/ 8 <24 25 49 50 74 75 76 77 78 79 80>;
         peripherals {
             right: peripheral_right {
                 pipe = <0>;
