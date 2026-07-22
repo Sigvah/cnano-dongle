@@ -2,6 +2,8 @@
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
 
+/ { chosen { zmk,esb-self = &left; }; };
+
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
 	
