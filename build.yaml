@@ -1,16 +1,4 @@
 include:
-  - board: nice_nano//zmk
-    shield: charybdis_dongle
-
-  - board: nice_nano//zmk
-    shield: charybdis_left
-
-  - board: nice_nano//zmk
-    shield: charybdis_right
-
-  - board: nice_nano//zmk
-    shield: settings_reset
-
   - board: xiao_ble//zmk
     shield: forager_left rgbled_adapter
     snippet: studio-rpc-usb-uart
@@ -20,9 +8,4 @@ include:
     snippet: studio-rpc-usb-uart
 
   - board: xiao_ble//zmk
-    shield: visorbearer
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: charybdis_dongle prospector_adapter
-    snippet: studio-rpc-usb-uart
+    shield: settings_reset
