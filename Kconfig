@@ -1,0 +1,6 @@
+# The Wafer board (from oleksandrmaslov/wafer-zmk-config) is a purpose-built ZMK
+# board with settings storage and bootloader integration, but it does not declare
+# that itself. Without this, the "explicit ZMK compat" check in ZMK's GitHub
+# build workflow fails the job even though the firmware compiles.
+config ZMK_BOARD_COMPAT
+    default y if BOARD_WAFER_LEFT || BOARD_WAFER_RIGHT
