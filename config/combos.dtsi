@@ -22,18 +22,18 @@
         combo_ae {                         // æ
             timeout-ms = <40>;
             bindings = <&kp APOS>;
-            key-positions = <3 2>;
+            key-positions = <1 2>;
         };
         combo_v {                          // j
             timeout-ms = <25>;
             bindings = <&kp J>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         combo_j {                          // v
             timeout-ms = <25>;
             bindings = <&kp V>;
-            key-positions = <7 8>;
+            key-positions = <6 7>;
         };
 
         // ============================================
@@ -115,7 +115,7 @@
         combo_question_exclaim {           // ?!
             timeout-ms = <40>;
             bindings = <&ques_excl>;
-            key-positions = <7 6>;
+            key-positions = <7 8>;
         };
 
         combo_at_mac {                     // @

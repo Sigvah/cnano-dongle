@@ -1,28 +1,13 @@
+# Wafer branch: builds only the Wafer halves.
+# The other keyboards (charybdis, forager, visorbearer, dongle) are built from main.
 include:
-  - board: nice_nano//zmk
-    shield: charybdis_dongle
+  - board: wafer_left
+  - board: wafer_right
 
-  - board: nice_nano//zmk
-    shield: charybdis_left
-
-  - board: nice_nano//zmk
-    shield: charybdis_right
-
-  - board: nice_nano//zmk
-    shield: settings_reset
-
-  - board: xiao_ble//zmk
-    shield: forager_left rgbled_adapter
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: forager_right rgbled_adapter
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: visorbearer
-    snippet: studio-rpc-usb-uart
-
-  - board: xiao_ble//zmk
-    shield: charybdis_dongle prospector_adapter
-    snippet: studio-rpc-usb-uart
+  # Flash these once to clear stored bonds on a half, then flash the normal firmware.
+  - board: wafer_left
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y
+    artifact-name: wafer_left_settings_reset
+  - board: wafer_right
+    cmake-args: -DCONFIG_ZMK_SETTINGS_RESET_ON_START=y
+    artifact-name: wafer_right_settings_reset

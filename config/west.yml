@@ -18,6 +18,8 @@ manifest:
     #   url-base: https://github.com/dhruvinsh
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -54,6 +56,16 @@ manifest:
     - name: prospector-zmk-module
       remote: carrefinho
       revision: feat/new-status-screens
+
+    # Wafer board definition (wafer_left / wafer_right) and the soft-off module
+    # its power button needs. Pinned together: the board expects this exact
+    # soft-off-plus revision.
+    - name: wafer-zmk-config
+      remote: oleksandrmaslov
+      revision: 4c110e7fec80e461b65f26f66961e5f6266118cb
+    - name: zmk-soft-off-plus
+      remote: oleksandrmaslov
+      revision: ef9eacf6f08e77101df4c2f186b45c10cc467365
 
   self:
     path: config
