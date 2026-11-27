@@ -5,6 +5,12 @@
         compatible = "zmk,split-esb";
         /* Varied bytes: an all-same-byte address syncs poorly (damex README). */
         base-address = [C4 6B 2E 91];
+        /*
+         * Trackball motion goes out without ACK, as running totals that heal
+         * from the next packet or keepalive. Keys, buttons and battery stay
+         * ACK'd. Pairs are <INPUT_EV_REL INPUT_REL_X>, <INPUT_EV_REL INPUT_REL_Y>.
+         */
+        lossy-codes = <0x02 0x00>, <0x02 0x01>;
         peripherals {
             right: peripheral_right {
                 pipe = <0>;
