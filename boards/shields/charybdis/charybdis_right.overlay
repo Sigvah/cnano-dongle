@@ -2,6 +2,8 @@
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
 
+/ { chosen { zmk,esb-self = &right; }; };
+
 &default_transform {
 	col-offset = <6>;
 };
@@ -37,4 +39,12 @@
 	};
 &trackball_split2 { 
 	status = "disabled"; 
+};
+/*
+ * Both sensor nodes sit on the same chip select and IRQ pin. This half
+ * uses &trackball; leaving &trackball2 enabled runs a second driver
+ * instance that re-reads the same sensor on every motion interrupt.
+ */
+&trackball2 {
+	status = "disabled";
 };

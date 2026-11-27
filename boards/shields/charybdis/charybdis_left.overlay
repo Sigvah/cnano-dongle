@@ -2,6 +2,8 @@
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
 
+/ { chosen { zmk,esb-self = &left; }; };
+
 &kscan0 {
 	compatible = "zmk,kscan-gpio-matrix";
 	
@@ -29,4 +31,12 @@
 };
 &trackball_split { 
 	status = "disabled"; 
+};
+/*
+ * Both sensor nodes sit on the same chip select and IRQ pin. This half
+ * uses &trackball2; leaving &trackball enabled runs a second driver
+ * instance that re-reads the same sensor on every motion interrupt.
+ */
+&trackball {
+	status = "disabled";
 };
