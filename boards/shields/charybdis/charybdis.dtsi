@@ -3,11 +3,12 @@
 / {
     esb_link {
         compatible = "zmk,split-esb";
-        base-address = [E7 E7 E7 E7];
+        /* Varied bytes: an all-same-byte address syncs poorly (damex README). */
+        base-address = [C4 6B 2E 91];
         peripherals {
             right: peripheral_right {
                 pipe = <0>;
-                prefix = <0xE7>;
+                prefix = <0x4B>;
                 weight = <1>;
             };
             left: peripheral_left {
